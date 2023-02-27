@@ -9,8 +9,9 @@ body {
 
   .meuNome, .descricao {
     font-family:'Arial Narrow'; 
-  }
-
+      border: 1px solid black;
+    };
+ 
   em {
     color: rgb(3, 43, 29);
   }
