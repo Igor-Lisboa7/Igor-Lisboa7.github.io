@@ -10,14 +10,26 @@ body{
 
   .black{
     margin: 50px 200px 0px 200px;
-    background-color: rgb(32, 121, 93);
-    color: rgb(0, 0, 0);
+    background-color: rgb(0, 0, 0);
+    color: rgb(255, 255, 255);
   }
 
   header{
     text-align: center;   
     width: 100%; ;
     /*border: 1px solid rgb(25, 109, 148);*/
+  }
+
+  .header{
+    text-align: center;
+    cursor: pointer;
+    padding: 10px 30px;
+    border-radius: var(--primer-borderRadius-medium, 40px);
+    margin: 25px 0px 25px 0px;
+    background-color: rgb(0, 217, 255);
+    border: 3px solid rgb(0, 217, 255);
+    text-align: center;
+    
   }
 
   .side-by-side{
@@ -35,7 +47,7 @@ body{
   }
 
   .side-lefth img{
-    box-shadow:0px 2px 0px 4px aqua;
+    box-shadow:0px 2px 0px 4px rgb(0, 217, 255);
     border-radius: 150px;
     flex-shrink: 0;
     line-height: 1;
@@ -45,7 +57,7 @@ body{
   }
 
   .side-Rigth{
-    margin: 0px 300px 0px 0px;
+    margin: 30px 300px 0px 0px;
     width: 70%;
     display: flex;
     text-align: center;
@@ -63,43 +75,95 @@ body{
   }
 
   .button-Project{
+    cursor: pointer;
     padding: 10px 30px;
     border-radius: var(--primer-borderRadius-medium, 40px);
     margin: 10px 10px 20px 20px;
-    background-color: aqua;
-    border: 3px solid aqua;
+    background-color: rgb(0, 217, 255);
+    border: 3px solid rgb(0, 217, 255);
     text-align: center;
   }
 
   .button-Github{
-    padding: 10px 35px;
+    cursor: pointer;
+    padding: 10px 30px;
     border-radius: var(--primer-borderRadius-medium, 40px);
     margin: 10px 20px 10px 0px;;
     background-color:black;
-    border: 3px solid aqua;
-    color: aqua;
+    border: 3px solid rgb(0, 217, 255);
+    color: rgb(0, 217, 255);
     flex-direction: row;
     text-align: center;
   }
 
   .content-address{
+    padding: 3px;
+    margin: 100px 10px 5px 10px;
+    background-color: rgb(10, 17, 32);
     text-align: center;
   }
  
   .half{
-    margin: 10px;
-    padding: 50px;
-    background-color: rgb(30, 38, 44);
+    margin: 100px 10px 100px 10px;
+    padding: 10px;
+    background-color: rgb(5, 10, 21);
     text-align: center;
     color: white;
   }
 
-  .half ul{
+  .tempo-trybe{
     display: inline-block;
-    
+    padding-right: 20px;
+    font-size: 15px;
+    text-align: center;
   }
 
-  .half li{
+  .projetos-trybe{
+    display: inline-block;
+    padding-right: 20px;
+    font-size: 15px;
+    text-align: center;
+  }
+
+  .meus-projetos{
+    display: inline-block;
+    padding-right: 20px;
+    font-size: 15px;
+    text-align: center;
+  }
+
+  .freelancer{
+    display: inline-block;
+    padding-right: 20px;
+    font-size: 15px;
+    text-align: center;
+  }
+
+  .Networking{
+    margin: 100px 10px 100px 10px;
+    padding: 10px;
+    text-align: center;
+    color: white; 
+  }
+
+  .content-network1{
+    margin: 20px 5px 0px 0px;
+    display: inline-block;
+    padding-right: 20px;
+    font-size: 15px;
+    text-align: center;
+  }
+
+  .content-network2{
+    margin: 20px 5px 0px 0px;
+    display: inline-block;
+    padding-right: 20px;
+    font-size: 15px;
+    text-align: center;
+  }
+
+  .content-network3{
+    margin: 20px 5px 0px 0px;
     display: inline-block;
     padding-right: 20px;
     font-size: 15px;
