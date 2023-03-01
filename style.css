@@ -32,6 +32,12 @@ body{
     
   }
 
+  .header:hover{
+    background-color: aqua;
+    padding: 11px 31px;
+    margin: 24px 0px;
+  }
+
   .side-by-side{
     margin: 100px 20px 20px 20px;
     display: flex;
@@ -47,13 +53,20 @@ body{
   }
 
   .side-lefth img{
-    box-shadow:0px 2px 0px 4px rgb(0, 217, 255);
-    border-radius: 150px;
+    box-shadow: 0px 2px 0px 4px rgb(2, 107, 126);
+    border-radius: 200px;
     flex-shrink: 0;
     line-height: 1;
     overflow: hidden;
     vertical-align: middle;
+    padding: 1px 0px;
      
+  }
+
+  .side-lefth img:hover{
+    
+    padding: 2px 2px;
+    box-shadow: 0px 2px 0px 4px rgb(5, 187, 219);
   }
 
   .side-Rigth{
@@ -84,6 +97,12 @@ body{
     text-align: center;
   }
 
+  .button-Project:hover{
+    background-color: aqua;
+    padding: 11px 31px;
+    margin: 9px 9px 19px 19px;
+  }
+
   .button-Github{
     cursor: pointer;
     padding: 10px 30px;
@@ -94,6 +113,12 @@ body{
     color: rgb(0, 217, 255);
     flex-direction: row;
     text-align: center;
+  }
+
+  .button-Github:hover{
+    background-color: rgb(37, 37, 37);
+    padding: 11px 31px;
+    margin: 9px 19px 9px 0px;
   }
 
   .content-address{
@@ -141,8 +166,7 @@ body{
 
   .title{
     margin: o;
-    font-family: sans-serif;
-    background-color: rgba(10, 17, 32, 0.507);
+    font-family:'Arial Narrow'; 
     background-size: cover;
     color: #fff;
     padding: 2em;
@@ -209,8 +233,14 @@ body{
     left: 0;
   }
 
-  
+  .left p,
+  .rigth p{
+    font-family:'Arial Narrow'; 
+    line-height: 20px;
+    color: white;
+  }
 
+  .left button,
   .rigth button{
     margin: 3px 0px 0px 3px;
     padding: 6px;
@@ -252,4 +282,30 @@ body{
     font-size: 15px;
     text-align: center;
   }
+
+  #link-topo{
+    text-decoration: none;
+    color: black;
+    background-color: rgb(15, 100, 126);
+    padding: 10px;
+    position: fixed;
+    right: 10px;
+    bottom: 20px;
+    box-shadow: 1px 1px 3px 3px rgb(0, 217, 255);
+  }
+
+  #link-topo:hover{
+    color: rgb(8, 8, 8);
+    background-color: rgb(0, 217, 255);
+    
+    padding: 11px;
+    position: fixed;
+    right: 11px;
+    bottom: 21px;
+    box-shadow: 1px 1px 3px 3px rgb(15, 100, 126);
+    
+    
+  }
+
+
 
