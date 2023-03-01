@@ -139,6 +139,89 @@ body{
     text-align: center;
   }
 
+  .title{
+    margin: o;
+    font-family: sans-serif;
+    background-color: rgba(10, 17, 32, 0.507);
+    background-size: cover;
+    color: #fff;
+    padding: 2em;
+  }
+
+  article h2{
+    text-align: center;
+  }
+
+  .timeline{
+    
+    margin: 5em auto;
+    max-width: 34.15em;
+  }
+
+  .checkpoint{
+    max-width: 34em;
+    padding-top: 2em;
+    padding-bottom: 2em;
+    position: relative;
+  }
+
+  .checkpoint .left{
+    border: 2px solid #888;
+    border-radius: 1em;
+    padding: 1.5em;
+  }
+
+  .checkpoint .rigth {
+    border: 2px solid #888;
+    border-radius: 1em;
+    padding: 1.5em;
+  }
+
+  .checkpoint:nth-child(odd){
+    border-right: 3px solid #888;
+    padding-right: 3em;
+    transform: translateX(-17em);
+  }
+
+  .checkpoint:nth-child(even){
+    border-left: 3px solid #888;
+    padding-left: 3em;
+    transform: translateX(17em);
+  }
+
+  .checkpoint:nth-child(odd)::before,
+  .checkpoint:nth-child(even)::before{
+    content: "";
+    background: #888;
+    width: 3em;
+    height: 3px;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+
+
+  .checkpoint:nth-child(odd)::before{
+    right: 0;
+  }
+
+  .checkpoint:nth-child(even)::before{
+    left: 0;
+  }
+
+  
+
+  .rigth button{
+    margin: 3px 0px 0px 3px;
+    padding: 6px;
+    border-radius: var(--primer-borderRadius-medium, 20px);
+    background-color:rgb(0, 0, 0);
+    border: 1px solid rgb(0, 217, 255);
+    color: rgb(255, 255, 255);
+    flex-direction: row;
+    text-align: center;
+  }
+
   .Networking{
     margin: 100px 10px 100px 10px;
     padding: 10px;
@@ -147,7 +230,7 @@ body{
   }
 
   .content-network1{
-    margin: 20px 5px 0px 0px;
+    margin: 50px 5px 0px 0px;
     display: inline-block;
     padding-right: 20px;
     font-size: 15px;
@@ -155,7 +238,7 @@ body{
   }
 
   .content-network2{
-    margin: 20px 5px 0px 0px;
+    margin: 50px 5px 0px 0px;
     display: inline-block;
     padding-right: 20px;
     font-size: 15px;
@@ -163,9 +246,10 @@ body{
   }
 
   .content-network3{
-    margin: 20px 5px 0px 0px;
+    margin: 50px 5px 0px 0px;
     display: inline-block;
     padding-right: 20px;
     font-size: 15px;
     text-align: center;
   }
+
