@@ -4,6 +4,7 @@
 }
 
 body{
+  margin: 50px 0px 0px 0px;
   width: 100%;
   background-color: black;
   }
@@ -15,17 +16,26 @@ body{
   }
 
   header{
+    margin: 50px 0px 0px 0px;
     text-align: center;   
     width: 100%; ;
     /*border: 1px solid rgb(25, 109, 148);*/
   }
 
+  header h1{
+    margin: 50px 0px 0px 0px;
+    text-align: center;   
+    width: 100%; ;
+    /*border: 1px solid rgb(25, 109, 148);*/
+  }
+
+  
   .header{
     text-align: center;
     cursor: pointer;
     padding: 10px 30px;
     border-radius: var(--primer-borderRadius-medium, 40px);
-    margin: 25px 0px 25px 0px;
+    margin: 50px 0px 25px 0px;
     background-color: rgb(0, 217, 255);
     border: 3px solid rgb(0, 217, 255);
     text-align: center;
@@ -100,7 +110,7 @@ body{
   .button-Project:hover{
     background-color: aqua;
     padding: 11px 31px;
-    margin: 9px 9px 19px 19px;
+    margin: 9px 8px 19px 19px;
   }
 
   .button-Github{
