@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meus Projetos</title>
+    <link rel="stylesheet" href="../css/reset.css">
+    <link rel="stylesheet" href="../css/styles.css">
+    <link rel="stylesheet" href="../css/modal.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <a href="../index.html">
+                <img src="../images/logo/full-stack-02.png" alt="Logo do Portfólio" class="logo">
+            </a>
+            <nav>
+                <ul>
+                    <li><a href="../index.html">Início</a></li>
+                    <li><a href="about.html">Sobre</a></li>
+                    <li><a href="projects.html">Projetos</a></li>
+                    <li><a href="contact.html">Contato</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="projects">
+            <div class="container">
+                <h1>Meus Projetos</h1>
+                <div class="project" data-project="1">
+                    <img src="../images/Project/hangman-game.png" alt="Projeto 1" class="project-img">
+                    <h3 class="project-title">Jogo-da-Forca 2.0</h3>
+                    <p>Descrição do projeto 1.</p>
+                </div>
+                <div class="project" data-project="2">
+                    <img src="../images/project1.png" alt="Projeto 2" class="project-img">
+                    <h3 class="project-title">Projeto 2</h3>
+                    <p>Descrição do projeto 2.</p>
+                </div>
+                <!-- Adicione mais projetos conforme necessário -->
+            </div>
+        </section>
+    </main>
+
+    <div id="modal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2 id="modal-title"></h2>
+            <div id="modal-gallery">
+                <img src="../images/Project/hangman-game.png" alt="Projeto 1" class="modal-img">
+                <p id="modal-description">Descrição detalhada do projeto.</p>
+            </div>
+        </div>
+    </div>
+
+    <footer id="contato">
+        <div class="container">
+            <h2>Contato</h2>
+            <p>Você pode entrar em contato comigo pelo email: <a href="mailto:seuemail@example.com">seuemail@example.com</a></p>
+            <p>Me siga no <a href="https://www.linkedin.com/in/seu-usuario" target="_blank">LinkedIn</a> e no <a href="https://github.com/seu-usuario" target="_blank">GitHub</a>.</p>
+        </div>
+    </footer>
+
+    <script src="../js/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,42 @@
+.container-1 {
+    margin: 100px 20px 20px 20px;
+    margin: auto;
+    overflow: hidden;
+    display: block;
+  }
+
+  .hero-2 {
+    background: #222; /* Fundo um pouco mais claro que o corpo */
+    padding: 2rem 0;
+    text-align: center;
+    display: block;
+  }
+  
+  .description {
+    width: 54%;
+    margin: auto;
+    overflow: hidden;
+  }
+  
+  .link-about{
+    text-decoration: none; /* Remove o sublinhado */
+    color: inherit; /* Mantém a cor do texto */
+    cursor: pointer; /* Mantém o cursor de link */
+  }
+
+  .side-lefth{
+    margin: auto;
+  }
+
+  .side-lefth img{
+    width: 200px;
+    background-color: #222;
+    box-shadow: 1px 2px 1px 1px rgb(0, 217, 255);;
+    border-radius: 50%;
+    flex-shrink: 0;
+    line-height: 0;
+    overflow: hidden;
+    vertical-align: middle;
+    padding: 1px 0px;
+     
+  }
