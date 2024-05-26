@@ -1,0 +1,108 @@
+/* styles.css */
+
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  margin: 0;
+  padding: 0;
+  background-color: #000; /* Fundo preto */
+  color: #fff; /* Texto branco */
+}
+
+.container {
+  width: 80%;
+  margin: auto;
+  overflow: hidden;
+}
+
+header {
+  background: #111; /* Fundo um pouco mais claro que o corpo */
+  color: #fff;
+  padding: 1rem 0;
+}
+
+header .logo {
+  float: left;
+}
+
+header nav {
+  float: right;
+  margin-top: 10px;
+}
+
+header nav ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+header nav ul li {
+  display: inline;
+  margin-left: 10px;
+}
+
+header nav ul li a {
+  color: #fff;
+  text-decoration: none;
+  padding: 5px 20px;
+  border-radius: 5px;
+}
+
+header nav ul li a:hover {
+  background: #575757;
+}
+
+.hero {
+  background: #222; /* Fundo um pouco mais claro que o corpo */
+  padding: 2rem 0;
+  text-align: center;
+}
+
+.projects {
+  padding: 2rem 0;
+}
+
+.projects .project {
+  margin-bottom: 1rem;
+}
+
+footer {
+  background: #111;
+  color: #fff;
+  text-align: center;
+  padding: 1rem 0;
+}
+
+footer a {
+  color: rgb(0, 217, 255); /* Cor do botão */
+  text-decoration: none;
+}
+
+footer a:hover {
+  text-decoration: underline;
+}
+
+/* Botões com cor rgb(0, 217, 255) */
+button {
+  background-color: rgb(0, 217, 255);
+  color: #000;
+  border: none;
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+button:hover {
+  background-color: #00b2e0;
+}
+
+.profile {
+  width: 150px;
+  border-radius: 50%;
+  margin: 1rem 0;
+}
