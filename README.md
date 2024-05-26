@@ -30,14 +30,15 @@ Este portfólio foi criado para mostrar meus projetos e habilidades em desenvolv
 
 Para clonar e executar este projeto, você precisará do [Git](https://git-scm.com) e de um navegador web. Na sua linha de comando, execute:
 
-```bash
-# Clone o repositório
-git clone https://github.com/seu-usuario/seu-portfolio.git
 
+# Clone o repositório
+```bash
+git clone https://github.com/seu-usuario/seu-portfolio.git
+```
 # Navegue para o diretório do projeto
 cd seu-portfolio
 
-```
+
 
 ## Uso
 
@@ -46,7 +47,7 @@ Depois de clonar o repositório, basta abrir o arquivo index.html no seu navegad
 
 
 ## Estrutura de Pastas:
-
+```bash
 portfolio/
 ├── index.html
 ├── css/
@@ -63,7 +64,7 @@ portfolio/
 │   ├── profile.jpg
 │   └── project1.png
 └── README.md
-
+```
 Essa estrutura ajuda a manter o projeto organizado e facilita a manutenção e expansão do portfólio no futuro.
 
 ## Descrição das pastas:
