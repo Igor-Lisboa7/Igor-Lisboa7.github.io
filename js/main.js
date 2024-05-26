@@ -1,4 +1,4 @@
-// main.js
+// Inicio da modal
 document.addEventListener("DOMContentLoaded", () => {
     const modal = document.getElementById("modal");
     const modalTitle = document.getElementById("modal-title");
@@ -11,7 +11,15 @@ document.addEventListener("DOMContentLoaded", () => {
             id: 1,
             title: "Jogo-da-Forca 2.0",
             description: "Descrição detalhada do projeto 1.",
-            images: ["../images/Project/hangman-game.png"]
+            images: [
+                "../images/Project/hangman-game.png",
+                "../images/Project/hangman-game2.png",
+                "../images/Project/hangman-game3.png",
+                "../images/Project/hangman-game4.png",
+                "../images/Project/hangman-game5.png",
+                "../images/Project/hangman-game6.png",
+                "../images/Project/hangman-game7.png",
+            ]
         },
         {
             id: 2,
@@ -51,3 +59,4 @@ document.addEventListener("DOMContentLoaded", () => {
         }
     });
 });
+// Fim da modal
