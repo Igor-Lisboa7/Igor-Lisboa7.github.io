@@ -38,7 +38,7 @@ body {
 }
 
 .container {
-    width: 80%;
+    width: 90%;
     margin: auto;
     overflow: hidden;
 }
@@ -46,36 +46,37 @@ body {
 header {
     background: #111; /* Fundo um pouco mais claro que o corpo */
     color: #fff;
-    padding: 1rem 0;
-}
-
-header .logo {
+    padding: 0px;
+  }
+  
+  header .logo {
     float: left;
-    width: 8%;
-}
-
-header nav {
+    width: 6%;
+    padding: 1px;
+  }
+  
+  header nav {
     float: right;
     margin-top: 10px;
-}
-
-header nav ul {
+  }
+  
+  header nav ul {
     margin: 0;
     padding: 0;
     list-style: none;
-}
-
-header nav ul li {
+  }
+  
+  header nav ul li {
     display: inline;
     margin-left: 10px;
-}
-
-header nav ul li a {
+  }
+  
+  header nav ul li a {
     color: #fff;
     text-decoration: none;
     padding: 5px 20px;
     border-radius: 5px;
-}
+  }
 
 header nav ul li a:hover {
     background: #575757;

@@ -19,12 +19,13 @@ body {
 header {
   background: #111; /* Fundo um pouco mais claro que o corpo */
   color: #fff;
-  padding: 1rem 0;
+  padding: 0px;
 }
 
 header .logo {
   float: left;
-  width: 8%;
+  width: 6%;
+  padding: 1px;
 }
 
 header nav {
@@ -61,12 +62,28 @@ header nav ul li a:hover {
   display: flex;
 }
 
+.project-img{
+  width: 100px;
+  border-radius: 4%;
+  margin: 1rem 0;
+  display: inline-block;
+  cursor: pointer;
+}
+
 .projects {
   padding: 2rem 0;
 }
 
 .projects .project {
   margin-bottom: 1rem;
+}
+
+#about{
+  padding: 32px;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
 }
 
 footer {

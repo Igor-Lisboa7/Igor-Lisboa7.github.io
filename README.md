@@ -28,7 +28,7 @@ Para clonar e executar este projeto, você precisará do [Git](https://git-scm.c
 ```bash
 git clone git@github.com:Igor-Lisboa7/Igor-Lisboa7.github.io.git
 ```
-Para Cloner o repositório
+Para Clonar o repositório.
 
 ## Navegue para o diretório do projeto
 cd Igor-Lisboa7.github.io
@@ -43,15 +43,15 @@ Depois de clonar o repositório, basta abrir o arquivo index.html no seu navegad
 ```bash
 portfolio/
 ├── index.html
+├── html/
+│   ├── about.html
+│   ├── contact.html
+│   └── projects.html
 ├── css/
 │   ├── contact.css
 │   ├── index.css
 │   ├── styles.css
 │   └── reset.css
-├── html/
-│   ├── about.html
-│   ├── contact.html
-│   └── projects.html
 ├── js/
 │   ├── main.js
 │   └── portfolio.js
@@ -68,7 +68,8 @@ Essa estrutura ajuda a manter o projeto organizado e facilita a manutenção e e
 index.html: Página principal do portfólio.
 
 html/: Contém arquivos HTML.
-about.html: Página sobre você.
+about.html: Página sobre min.
+contact: Contatos.
 projects.html: Página listando seus projetos.
 
 css/: Contém arquivos de estilo CSS.
@@ -90,7 +91,7 @@ README.md: Arquivo de documentação do projeto.
 Você pode entrar em contato comigo pelos seguintes meios:
 
 Email: igorresendelisboa1@gmail.com
-LinkedIn: inkedin.com/in/igor-lisboa-
+LinkedIn: https://linkedin.com/in/igor-lisboa-
 GitHub: https://github.com/Igor-Lisboa7
 
 Agradeço por visitar meu portfólio!
