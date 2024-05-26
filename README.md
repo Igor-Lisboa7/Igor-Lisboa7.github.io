@@ -21,29 +21,22 @@ Este portfólio foi criado para mostrar meus projetos e habilidades em desenvolv
 - CSS3
 - JavaScript
 - [React](https://reactjs.org/)
-- [Node.js](https://nodejs.org/)
-- [TypeScript](https://www.typescriptlang.org/)
-- [Docker](https://www.docker.com/)
-- [SQL](https://www.mysql.com/)
 
 ## Instalação
 
 Para clonar e executar este projeto, você precisará do [Git](https://git-scm.com) e de um navegador web. Na sua linha de comando, execute:
-
-
-# Clone o repositório
 ```bash
-git clone https://github.com/seu-usuario/seu-portfolio.git
+git clone git@github.com:Igor-Lisboa7/Igor-Lisboa7.github.io.git
 ```
-# Navegue para o diretório do projeto
-cd seu-portfolio
+Para Cloner o repositório
 
+## Navegue para o diretório do projeto
+cd Igor-Lisboa7.github.io
 
 
 ## Uso
 
-Depois de clonar o repositório, basta abrir o arquivo index.html no seu navegador preferido para visualizar o portfólio.
-
+Depois de clonar o repositório, basta abrir o arquivo index.html no seu navegador preferido para visualizar o portfólio e navegar entre as paginas do portfólio.
 
 
 ## Estrutura de Pastas:
@@ -51,10 +44,13 @@ Depois de clonar o repositório, basta abrir o arquivo index.html no seu navegad
 portfolio/
 ├── index.html
 ├── css/
+│   ├── contact.css
+│   ├── index.css
 │   ├── styles.css
 │   └── reset.css
 ├── html/
 │   ├── about.html
+│   ├── contact.html
 │   └── projects.html
 ├── js/
 │   ├── main.js
