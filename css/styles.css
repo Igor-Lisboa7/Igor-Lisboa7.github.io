@@ -10,7 +10,8 @@ body {
 }
 
 .container {
-  width: 80%;
+  margin: 100px 20px 20px 20px;
+  width: 90%;
   margin: auto;
   overflow: hidden;
 }
@@ -23,6 +24,7 @@ header {
 
 header .logo {
   float: left;
+  width: 8%;
 }
 
 header nav {
@@ -56,6 +58,7 @@ header nav ul li a:hover {
   background: #222; /* Fundo um pouco mais claro que o corpo */
   padding: 2rem 0;
   text-align: center;
+  display: flex;
 }
 
 .projects {
@@ -102,7 +105,7 @@ button:hover {
 }
 
 .profile {
-  width: 150px;
+  width: 200px;
   border-radius: 50%;
   margin: 1rem 0;
 }
