@@ -1,85 +1,206 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Meu Portfólio</title>
+
+    <!-- <CSS> bootstrap </CSS> -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/5.3.0/css/bootstrap.min.css" rel="stylesheet">
+    <!-- <CSS> bootstrap </CSS> -->
+
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/styles.css">
     <link rel="stylesheet" href="css/index.css">
     <link rel="stylesheet" href="../css/modal.css">
 </head>
+
 <body>
-    <header>
-        <div class="container">
-            <a href="index.html">
-                <img src="images/logo/full-stack-02.png" alt="Logo do Portfólio" class="logo">
-            </a>
-            <nav>
-                <ul>
-                    <li><a href="index.html">Início</a></li>
-                    <li><a href="html/about.html">Sobre</a></li>
-                    <li><a href="html/projects.html">Projetos</a></li>
-                    <li><a href="html/contact.html">Contato</a></li>
+
+    <header class="custom-header">
+        <nav id="custom-header" class="navbar navbar-dark" style="background-color:#444;">
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo03"
+                aria-controls="navbarTogglerDemo03" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <a id="disappear" class="navbar-brand" href="../index.html"><img src="/images/logo/full-stack-.png"
+                    alt=""></a>
+
+            <div class="collapse navbar-collapse" id="navbarTogglerDemo03">
+                <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="../index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="../html/sobre.html">Sobre</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="../html/projects.html">Projetos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="../html/certificates.html">Certificados</a>
+                    </li>
+                    <li class="nav-item">
+                        <a id="disappear-two" class="nav-link" href="../index.html">Dark Mod / Clean Mod (em
+                            breve)</a>
+                    </li>
                 </ul>
-            </nav>
-        </div>
+            </div>
+        </nav>
     </header>
 
     <main>
-        <section class="hero">
 
-            <div class="container-1">
+        <div class="black"></div>
 
-                <div class="side-lefth">
-                    <img src="images/profile/new.png" alt="Tryber sorriso discreto com camiseta social branca" id="foto">
+        <section class="container-1">
+            <article class="Content-1">
+
+                <div class="side-center">
+                    <img src="images/profile/new.png" alt="Tryber sorriso discreto com camiseta social branca"
+                        id="foto">
                     <br>
                     <br>
-                    <h1>Bem-vindo ao Meu Portfólio</h1>
+                    <h3>Bem-vindo ao Meu Portfólio</h3>
                 </div>
-                
+
                 <br>
 
-                <article class="description">
+                <div class="description">
                     <p>
-                    Meu nome é Igor Lisboa tenho 27 anos, sou formado em Desenvolvimento Web Full Stack pela Trybe. Apaixonado por tecnologia e desenvolvimento, com um foco especial em JavaScript e montagem de computadores. Também sou um entusiasta dos Border Collies.
+                        Olá, meu nome é Igor Lisboa, tenho 27 anos e sou formado em Desenvolvimento Web Full Stack pela
+                        Trybe. Sou apaixonado por tecnologia e desenvolvimento, com um foco especial em JavaScript e
+                        montagem de computadores. Além disso, sou um grande entusiasta dos Border Collies.
                     </p>
-                    <a href="html/about.html" class="link-about">
-                        <p>
-                            ...
-                        </p>
-                    </a>
-
+                    <p>
+                        Na Trybe adquiri conhecimento em diversas tecnologias,
+                        incluindo Git, HTML, CSS, JavaScript, React, Node.js, TypeScript, Docker, SQL, entre outras.
+                    </p>
+                    <p>
+                        Atualmente, atuo como Assistente Administrativo / TI no Grupo Multitécnica, um gigante do
+                        agronegócio. Nesta função, estou migrando para a área de TI, onde sou responsável por demandas
+                        de infraestrutura e rede. Também ajudo como desenvolvedor Fluig na integração de processos que
+                        antes utilizavam várias ferramentas como CRM (Zoho), GLPI e QUALYTEAM, ao sistema Fluig da
+                        Totvs, interagindo com o Protheus, um ERP também da Totvs.
+                    </p>
+                    <p>
+                        Estou sempre em busca de novos conhecimentos e no momento, Além do Fluig estou estudando Kotlin
+                        para desenvolvimento de aplicações Android, em um dos módulos eletivos oferecidos pela Trybe
+                        após a conclusão do curso Full Stack, permitindo um aprofundamento em outras linguagens e áreas
+                        de desenvolvimento.
+                    </p>
                     <br>
-                    <hr>
-                    <br>
-
-                </article>
-
-                <p>Conheça meus projetos e habilidades em desenvolvimento web.</p>
-
-                <br>
-
-                <button>Ver Projetos</button>
-
-            </div>
-
-        </section>
-
-        <section class="projects">
-
-            <div class="container">
-                <h2>Meus Projetos</h2>
-
-                <div class="project" data-project="1">
-                    <img src="../images/Project/hangman-game.png" alt="Projeto 1" class="project-img">
-                    <h3 class="project-title">Jogo-da-Forca 2.0</h3>
-                    <p>Descrição do projeto 1.</p>
+                    <p>
+                        Se você está procurando um desenvolvedor dedicado e apaixonado por tecnologia, adoraria
+                        conversar!
+                    </p>
                 </div>
-                <!-- Adicione mais projetos conforme necessário -->
-            </div>
 
+                <div class="plus-container">
+                    <div id="plus">
+
+                        <div class="plus" id="certificados">
+                            <img src="./images/icons/plus.png" alt="plus" width="40px">
+                            <h5>+10 Certificados</h5>
+                            <p>Certificações em Tecnologias</p>
+                        </div>
+
+                        <div class="plus" id="tempo-trybe">
+                            <img src="./images/icons/plus.png" alt="plus" width="40px">
+                            <h5>+30 Projetos</h5>
+                            <p>Concluidos pela Trybe</p>
+                        </div>
+
+                        <div class="plus" id="meus-projetos">
+                            <img src="./images/icons/plus.png" alt="plus" width="40px">
+                            <h5>03 Projetos</h5>
+                            <p>Projetos Pessoais Concluidos</p>
+                        </div>
+
+                        <div class="plus" id="certificados">
+                            <img src="./images/icons/plus.png" alt="plus" width="40px">
+                            <h5> ERP PROTHEUS</h5>
+                            <p>Conhecimento em ERP</p>
+                        </div>
+
+                        <div class="plus" id="freelancer">
+                            <img src="./images/icons/plus.png" alt="plus" width="40px">
+                            <h5>02 Freelancer</h5>
+                            <p>Projetos Freelancer Entregues</p>
+                        </div>
+
+                    </div>
+
+                </div>
+                <br>
+            </article>
         </section>
+
+        <section class="container-2">
+            <article class="project-container">
+                <div class="projects">
+
+                    <div class="project" data-project="1">
+                        <img src="./images/certificate/Front-end.png" class="card-img-top" alt="modal-1">
+                        <div class="card-body">
+                            <h5 class="card-title">Título do Card</h5>
+                            <p class="card-text">Este é um exemplo de texto dentro de um card. Você pode usar este
+                                espaço para descrever o conteúdo do card.</p>
+                            <a href="#" class="btn btn-info">Visitar</a>
+                        </div>
+                    </div>
+
+
+                    <div class="project" data-project="1">
+                        <img src="./images/ptoject-Trybe/Trybewarts.png" class="card-img-top" alt="modal-1">
+                        <div class="card-body">
+                            <h5 class="card-title">Título do Card</h5>
+                            <p class="card-text">Este é um exemplo de texto dentro de um card. Você pode usar este
+                                espaço para descrever o conteúdo do card.</p>
+                            <a href="#" class="btn btn-info">Visitar</a>
+                        </div>
+                    </div>
+
+
+                    <div class="project" data-project="1">
+                        <img src="../images/Project/hangman-game.png" class="card-img-top" alt="modal-1">
+                        <div class="card-body">
+                            <h5 class="card-title">Título do Card</h5>
+                            <p class="card-text">Este é um exemplo de texto dentro de um card. Você pode usar este
+                                espaço para descrever o conteúdo do card.</p>
+                            <a href="#" class="btn btn-info">Visitar</a>
+                        </div>
+                    </div>
+
+                    <div class="project" data-project="1">
+                        <img src="./images/protheus/Protheus.png" class="card-img-top" alt="modal-1">
+                        <div class="card-body">
+                            <h5 class="card-title">Título do Card</h5>
+                            <p class="card-text">Este é um exemplo de texto dentro de um card. Você pode usar este
+                                espaço para descrever o conteúdo do card.</p>
+                            <a href="#" class="btn btn-info">Visitar</a>
+                        </div>
+                    </div>
+
+                    <div class="project" data-project="1">
+                        <img src="./images/freelancer/Freelance-Listech.png" class="card-img-top" alt="modal-1">
+                        <div class="card-body">
+                            <h5 class="card-title">Título do Card</h5>
+                            <p class="card-text">Este é um exemplo de texto dentro de um card. Você pode usar este
+                                espaço para descrever o conteúdo do card.</p>
+                            <a href="#" class="btn btn-info">Visitar</a>
+                        </div>
+                    </div>
+
+
+                </div>
+            </article>
+        </section>
+
+        <br>
 
     </main>
 
@@ -88,21 +209,65 @@
             <span class="close">&times;</span>
             <h2 id="modal-title"></h2>
             <div id="modal-gallery">
-                <img src="../images/Project/hangman-game.png" alt="Projeto 1" class="modal-img">
+                <img src="./images/Project/hangman-game.png" alt="modal-1" class="modal-img">
                 <p id="modal-description">Descrição detalhada do projeto.</p>
             </div>
         </div>
     </div>
 
-    <footer id="contato">
+    <div id="modal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2 id="modal-title"></h2>
+            <div id="modal-gallery">
+                <img src="../images/Project/hangman-game.png" alt="modal-1" class="modal-img">
+                <p id="modal-description">Descrição detalhada do projeto.</p>
+            </div>
+        </div>
+    </div>
 
-        <div class="container">
-            <h2>Contato</h2>
-            <p>Você pode entrar em contato comigo pelo email: <a href="igorresendelisboa1@gmail.com">igorresendelisboa1@gmail.com</a></p>
-            <p>Me siga no <a href="https://www.linkedin.com/in/igor-lisboa-" target="_blank">LinkedIn</a> e no <a href="https://github.com/Igor-Lisboa7" target="_blank">GitHub</a>.</p>
+    <footer>
+
+        <div class="Networking">
+
+            <div class="content-network">
+                <a href="https://www.linkedin.com/in/igor-lisboa-384a2311b/" target="blank"><img
+                        src="./images/logo/linkedin.png" width="30px"> Linkedin</a>
+            </div>
+
+            <div class="content-network">
+                <a href="https://github.com/Igor-Lisboa7" target="_blank"><img src="./images/logo/github.png"
+                        width="30px"> GitHub</a>
+            </div>
+
+            <div class="content-network">
+                <a href="mailto:igorresendelisboa1@gmail.com" target="_blank"><img
+                        src="https://play-lh.googleusercontent.com/D1Dz2BjPYev_oyksKXsdtAS66a_2Ql-sklpzTnwR9lqnDG_P5lAJEtfR70FudJ0XMA=s48-rw"
+                        style='width: 30px' target="_blank"> e-mail</a>
+            </div>
+
         </div>
 
+        <br>
+
+
+        <div class="compiled">
+            <p> © compiled by Igor Lisboa, 2024.</p>
+        </div>
+
+
+
     </footer>
+
+    <!-- <script> bootstrap </script> -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous">
+        </script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js"
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous">
+        </script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
+    <!-- <script> bootstrap </script> -->
 
     <script src="../js/main.js"></script>
 

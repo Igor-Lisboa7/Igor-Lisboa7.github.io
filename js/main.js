@@ -79,3 +79,45 @@ document.addEventListener("DOMContentLoaded", () => {
 });
 
 // Fim da modal
+
+
+// Modal 2
+// scripts.js
+document.addEventListener('DOMContentLoaded', function() {
+    var modal = document.getElementById('modal');
+    var span = document.getElementsByClassName('close')[0];
+    var cards = document.querySelectorAll('.card');
+
+    cards.forEach(function(card) {
+        card.addEventListener('click', function() {
+            var projectId = card.getAttribute('data-project');
+            showModal(projectId);
+        });
+    });
+
+    span.onclick = function() {
+        modal.style.display = 'none';
+    }
+
+    window.onclick = function(event) {
+        if (event.target == modal) {
+            modal.style.display = 'none';
+        }
+    }
+
+    function showModal(projectId) {
+        // Defina o conteúdo da modal baseado no projectId
+        var title = 'Título do Projeto ' + projectId;
+        var description = 'Descrição detalhada do projeto ' + projectId;
+        var imageSrc = card.querySelector('img').src;
+
+        document.getElementById('modal-title').innerText = title;
+        document.getElementById('modal-description').innerText = description;
+        document.querySelector('.modal-img').src = imageSrc;
+
+        modal.style.display = 'block';
+    }
+});
+
+
+// Fim da modal 2
