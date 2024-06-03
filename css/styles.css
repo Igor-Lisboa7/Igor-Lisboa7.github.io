@@ -1,105 +1,93 @@
 /* styles.css */
 
 body {
+  
   font-family: Arial, sans-serif;
   line-height: 1.6;
   margin: 0;
   padding: 0;
-  background-color: #000; /* Fundo preto */
-  color: #fff; /* Texto branco */
-}
-
-.container {
-  margin: 100px 20px 20px 20px;
-  width: 90%;
-  margin: auto;
-  overflow: hidden;
-}
-
-header {
-  background: #111; /* Fundo um pouco mais claro que o corpo */
+  background-color: #000;
+  /* Fundo preto */
   color: #fff;
-  padding: 0px;
+  /* Texto branco */
+
 }
 
-header .logo {
-  float: left;
-  width: 6%;
-  padding: 1px;
+#custom-header  {
+  background-color: #555;
 }
 
-header nav {
-  float: right;
-  margin-top: 10px;
-}
-
-header nav ul {
-  margin: 0;
-  padding: 0;
-  list-style: none;
-}
-
-header nav ul li {
-  display: inline;
-  margin-left: 10px;
-}
-
-header nav ul li a {
-  color: #fff;
-  text-decoration: none;
-  padding: 5px 20px;
-  border-radius: 5px;
-}
-
-header nav ul li a:hover {
-  background: #575757;
-}
-
-.hero {
-  background: #222; /* Fundo um pouco mais claro que o corpo */
-  padding: 2rem 0;
-  text-align: center;
-  display: flex;
-}
-
-.project-img{
+header nav a img {
   width: 100px;
-  border-radius: 4%;
-  margin: 1rem 0;
-  display: inline-block;
-  cursor: pointer;
 }
 
-.projects {
-  padding: 2rem 0;
+main {
+  
+  background: #000;
+  display: flex;
+  flex-wrap: wrap;
+  align-content: center;
+  flex-direction: column;
+
+
 }
 
-.projects .project {
-  margin-bottom: 1rem;
+
+
+.container-1 {
+  border-radius: 20px;
+  padding-bottom: 20px;
+  text-align: center;
+  width: 98%;
+  margin: auto;
+  margin-top: 10px;
+  background: #222;
+  padding-top: 10px;
+  box-shadow: 0px 0px 1px 1px rgba(1, 238, 255, 0.791);
 }
 
-#about{
-  padding: 32px;
-  border: 0;
-  font-size: 100%;
-  font: inherit;
-  vertical-align: baseline;
+.container-2 {
+  text-align: center;
+  display: block;
+  padding-top: 20px;
+}
+
+aside {
+  display: flex;
+  justify-content: center;
 }
 
 footer {
-  background: #111;
-  color: #fff;
+  width: 100%;
+  justify-content: space-around;
+  background: #666;
+  color: #888888;
   text-align: center;
-  padding: 1rem 0;
+  align-items: center;
+  padding: 4px 0px 4px 0px;
+  margin: auto;
+  font-size: 12px;
 }
 
-footer a {
-  color: rgb(0, 217, 255); /* Cor do botão */
+.Networking {
+  display: flex;
+  justify-content: space-around;
+  width: 15%;
+  margin: auto;
   text-decoration: none;
 }
 
-footer a:hover {
-  text-decoration: underline;
+.content-network a {
+
+    color: #bababa;
+    text-decoration: none;
+   
+}
+
+.compiled {
+  font-size: 12px;
+  text-decoration: none;
+  color: #bababa;
 }
 
 /* Botões com cor rgb(0, 217, 255) */
@@ -119,10 +107,4 @@ button {
 
 button:hover {
   background-color: #00b2e0;
-}
-
-.profile {
-  width: 200px;
-  border-radius: 50%;
-  margin: 1rem 0;
 }
