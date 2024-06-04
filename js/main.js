@@ -5,20 +5,34 @@ const projects = [
         title: "Jogo-da-Forca 2.0",
         description: "Descrição detalhada do projeto 1.",
         images: [
-            { src: "../images/Project/hangman-game.png", 
-            desc: "Tela do jogo principal onde jogamos contra o tempo, temos 5 vidas inicial, padrão de 6 tentativas e placar de pontos que pode ser trocado pela tecla 'Dica' conforme descrito no Pergaminho de Regras." },
-            { src: "../images/Project/hangman-game2.png", 
-            desc: "Este é o Pergaminho de Regras, cada jogador devera concordar com as Regras e digitar seu nome no jogo que ficará gravado ao lado do 'Tempo'." },
-            { src: "../images/Project/hangman-game3.png", 
-            desc: "Este é o Painel de Menu, cada retangulo tem 10 fases clicando sobre um poderá ver onde parou, repetir as fases não lhe consede mais pontos." },
-            { src: "../images/Project/hangman-game4.png", 
-            desc: "Painel Menu, ao passar o mouse sobre os retangulos é possível tirar o borrão e ver um easter egg, uma dica sobre umas das palavras chave da fase." },
-            { src: "../images/Project/hangman-game5.png", 
-            desc: "Este é o Painel do Jogo Aleatório, nesse jogo você joga contra o tempo e com categorias aleatórias não seguem um padrão de dificuldade, nenhuma das palavras aqui é igual a do jogo principal." },
-            { src: "../images/Project/hangman-game6.png", 
-            desc: "Pagina para elogios ou relatar algum problema que possa ocorrer durante o jogo." },
-            { src: "../images/Project/hangman-game7.png", 
-            desc: "Uma modal usando bootstrap, para que a qualquer momento você possa relembrar as regras do jogo." }
+            {
+                src: "../images/Project/hangman-game.png",
+                desc: "Tela do jogo principal onde jogamos contra o tempo, temos 5 vidas inicial, padrão de 6 tentativas e placar de pontos que pode ser trocado pela tecla 'Dica' conforme descrito no Pergaminho de Regras."
+            },
+            {
+                src: "../images/Project/hangman-game2.png",
+                desc: "Este é o Pergaminho de Regras, cada jogador devera concordar com as Regras e digitar seu nome no jogo que ficará gravado ao lado do 'Tempo'."
+            },
+            {
+                src: "../images/Project/hangman-game3.png",
+                desc: "Este é o Painel de Menu, cada retangulo tem 10 fases clicando sobre um poderá ver onde parou, repetir as fases não lhe consede mais pontos."
+            },
+            {
+                src: "../images/Project/hangman-game4.png",
+                desc: "Painel Menu, ao passar o mouse sobre os retangulos é possível tirar o borrão e ver um easter egg, uma dica sobre umas das palavras chave da fase."
+            },
+            {
+                src: "../images/Project/hangman-game5.png",
+                desc: "Este é o Painel do Jogo Aleatório, nesse jogo você joga contra o tempo e com categorias aleatórias não seguem um padrão de dificuldade, nenhuma das palavras aqui é igual a do jogo principal."
+            },
+            {
+                src: "../images/Project/hangman-game6.png",
+                desc: "Pagina para elogios ou relatar algum problema que possa ocorrer durante o jogo."
+            },
+            {
+                src: "../images/Project/hangman-game7.png",
+                desc: "Uma modal usando bootstrap, para que a qualquer momento você possa relembrar as regras do jogo."
+            }
         ]
     },
     {
@@ -33,6 +47,50 @@ const projects = [
     }
     // Adicione mais projetos conforme necessário
 ];
+
+const plusCards = [
+    {
+        id: 1,
+        title: "CERTIFICADO",
+        description: "Descrição detalhada do projeto 2.",
+        images: [
+            { src: "./images/certificate/Front-end.png", desc: "Certificado Front-End" },
+            { src: "./images/certificate/Totvs-Certificate-Fluig.png", desc: "Certificado Front-End" }
+        ]
+    },
+    {
+        id: 2,
+        title: "PROJETOS TRYBE",
+        description: "Descrição detalhada do projeto 2.",
+        images: [
+            { src: "./images/ptoject-Trybe/Trybewarts.png", desc: "Projeto Trybewarts" }
+        ]
+    },
+    {
+        id: 3,
+        title: "PROJETOS PESSOAIS",
+        description: "Descrição detalhada do projeto 2.",
+        images: [
+            { src: "../images/Project/hangman-game.png", desc: "Jogo da Forca 2.0" }
+        ]
+    },
+    {
+        id: 4,
+        title: "PROTHEUS",
+        description: "Descrição detalhada do projeto 2.",
+        images: [
+            { src: "../images/protheus/Protheus.png", desc: "ERP Protheus" }
+        ]
+    },
+    {
+        id: 5,
+        title: "FREELANCER",
+        description: "Descrição detalhada do projeto 2.",
+        images: [
+            { src: "./images/freelancer/Freelance-Listech.png", desc: "Projeto Freelancer feito para empresa Listech Informática." }
+        ]
+    }
+]
 
 document.addEventListener("DOMContentLoaded", () => {
     const modal = document.getElementById("modal");
@@ -82,42 +140,48 @@ document.addEventListener("DOMContentLoaded", () => {
 
 
 // Modal 2
-// scripts.js
-document.addEventListener('DOMContentLoaded', function() {
-    var modal = document.getElementById('modal');
-    var span = document.getElementsByClassName('close')[0];
-    var cards = document.querySelectorAll('.card');
+document.addEventListener("DOMContentLoaded", () => {
+    const modal = document.getElementById("modal");
+    const modalTitle = document.getElementById("modal-title");
+    const modalDescription = document.getElementById("modal-description");
+    const modalGallery = document.getElementById("modal-gallery");
+    const closeModal = document.getElementsByClassName("close")[0];
 
-    cards.forEach(function(card) {
-        card.addEventListener('click', function() {
-            var projectId = card.getAttribute('data-project');
-            showModal(projectId);
+    document.querySelectorAll('.plusCard').forEach(plusCard => {
+        plusCard.addEventListener('click', () => {
+            const plusCardId = plusCard.getAttribute('data-project');
+            const projectData = plusCards.find(p => p.id == plusCardId);
+
+            modalTitle.textContent = projectData.title;
+            modalDescription.textContent = projectData.description;
+            modalGallery.innerHTML = '';
+            projectData.images.forEach(img => {
+                const imgElement = document.createElement('img');
+                imgElement.src = img.src;
+                imgElement.alt = projectData.title;
+                imgElement.className = 'modal-img';
+
+                const imgDesc = document.createElement('p');
+                imgDesc.textContent = img.desc;
+                imgDesc.className = 'modal-img-desc';
+
+                modalGallery.appendChild(imgElement);
+                modalGallery.appendChild(imgDesc);
+            });
+
+            modal.style.display = "block";
         });
     });
 
-    span.onclick = function() {
-        modal.style.display = 'none';
-    }
+    closeModal.addEventListener('click', () => {
+        modal.style.display = "none";
+    });
 
-    window.onclick = function(event) {
+    window.addEventListener('click', (event) => {
         if (event.target == modal) {
-            modal.style.display = 'none';
+            modal.style.display = "none";
         }
-    }
-
-    function showModal(projectId) {
-        // Defina o conteúdo da modal baseado no projectId
-        var title = 'Título do Projeto ' + projectId;
-        var description = 'Descrição detalhada do projeto ' + projectId;
-        var imageSrc = card.querySelector('img').src;
-
-        document.getElementById('modal-title').innerText = title;
-        document.getElementById('modal-description').innerText = description;
-        document.querySelector('.modal-img').src = imageSrc;
-
-        modal.style.display = 'block';
-    }
+    });
 });
-
 
 // Fim da modal 2
