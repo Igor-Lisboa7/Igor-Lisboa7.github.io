@@ -1,0 +1,97 @@
+.card-container {
+    width: 100%;
+    margin: auto;
+  }
+  
+  .button {
+    margin: 50px;
+  }
+  
+  .cards{
+    width: 90%;
+    display: flex;
+    justify-content: space-evenly;
+    text-align: center;
+    padding: 10px 0px 10px 0px;
+    margin: auto;
+  }
+  
+  .project-img {
+    height: 2px;
+    height: 160px;
+    border-radius: 4%;
+    margin: 1rem 0;
+    display: inline-block;
+    cursor: pointer;
+  }
+  .plusCard {
+    width: 300px;
+    border: 2px solid #222;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px 2px rgba(3, 225, 250, 0.791);
+  }
+  
+  .plusCard:hover{
+    border: 2px solid #222;
+    border-radius: 10px;
+    box-shadow: 1px 8px 8px 6px rgba(3, 225, 250, 0.791);
+  }
+  .card-img-top {
+    height: 250px;
+    background-color: #222;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+  }
+  
+  .card-body {
+    height: 210px;
+    padding: 10px;
+    background-color: #222;
+  }
+  
+  .card-body:hover {
+    height: 210px;
+    padding: 10px;
+    background-color: #444;
+  }
+  
+  .card-title {
+    margin-bottom: .5rem;
+    font-family: 'Cormorant Garamond', serif;
+    font-weight: 500;
+    line-height: 1.2;
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+    color: rgba(2, 192, 235, 0.911);
+  }
+  
+  .card-text {
+    font-family: 'Cormorant Garamond', serif;
+    font-weight: 500;
+    font-size: 1rem;
+    color: rgba(2, 192, 235, 0.911);
+  }
+  
+  .btn-info {
+    font-family: 'Cormorant Garamond', serif;
+    background-color: rgba(2, 192, 235, 0.911);
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    text-transform: uppercase;
+  }
+  .btn-info:hover {
+    background-color: rgba(90, 210, 237, 0.911);
+    border: none;
+    border-radius: 5px;
+    box-shadow: 1px 2px 3px 2px rgba(151, 212, 225, 0.92);
+    padding: 10px 20px;
+    text-transform: uppercase;
+  }
+  
+  h1{
+    padding: 30px 0px 5px 0px;
+  }
+  
+  
+  

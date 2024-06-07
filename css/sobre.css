@@ -1,3 +1,15 @@
+.side-center img {
+    width: 180px;
+    height: 210PX;
+    box-shadow: 1px 2px 1px 1px rgba(2, 192, 235, 0.911);
+    border-radius: 10px;
+    flex-shrink: 0;
+    line-height: 0;
+    overflow: hidden;
+    vertical-align: middle;
+    background-color: #000;
+}
+
 .contact {
     padding: 2rem 0;
 }
