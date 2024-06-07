@@ -32,10 +32,13 @@
   
   
 }
+
 .plus {
+  width: 300px;
   justify-content: space-evenly;
   text-align: center;
   padding: 10px 0px 10px 0px;
+  
 }
 
 h5 {
@@ -52,10 +55,12 @@ h5 {
 }
 
 .cards{
+  width: 90%;
   display: flex;
   justify-content: space-evenly;
   text-align: center;
   padding: 10px 0px 10px 0px;
+  margin: auto;
 }
 
 .project-img {

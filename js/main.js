@@ -51,19 +51,23 @@ const projects = [
 const plusCards = [
     {
         id: 1,
-        title: "CERTIFICADO",
+        title: "CERTIFICADOS",
         description: "Descrição detalhada do projeto 2.",
         images: [
             { src: "./images/certificate/Front-end.png", desc: "Certificado Front-End" },
+            { src: "./images/certificate/Back-end.png", desc: "Certificado Front-End" },
+            { src: "./images/certificate/Computer-Science.png", desc: "Certificado Front-End" },
             { src: "./images/certificate/Totvs-Certificate-Fluig.png", desc: "Certificado Front-End" }
         ]
     },
     {
         id: 2,
         title: "PROJETOS TRYBE",
-        description: "Descrição detalhada do projeto 2.",
+        description: "Projetos feitos na Trybe usados como 'prova' onde cada requisito contava pontos.",
         images: [
-            { src: "./images/ptoject-Trybe/Trybewarts.png", desc: "Projeto Trybewarts" }
+            { src: "./images/ptoject-Trybe/Trybewarts/Trybewarts.png", desc: "Projeto Trybewarts" },
+            { src: "./images/ptoject-Trybe/Gerador-de-senha/Gerenciador-de-senha.png", desc: "Gerenciador de Senhas" },
+            { src: "./images/ptoject-Trybe/TrybeTunes/TrybeTunes.png", desc: "TrybeTunes" }
         ]
     },
     {
@@ -71,25 +75,27 @@ const plusCards = [
         title: "PROJETOS PESSOAIS",
         description: "Descrição detalhada do projeto 2.",
         images: [
-            { src: "../images/Project/hangman-game.png", desc: "Jogo da Forca 2.0" }
+            { src: "../images/Project/Jogo-da-Forca/hangman-game.png"},
+            { src: "../images/Project/Jogo-da-Forca/death.png", desc: "Jogo da Forca 2.0" }
         ]
     },
     {
         id: 4,
-        title: "PROTHEUS",
-        description: "Descrição detalhada do projeto 2.",
-        images: [
-            { src: "../images/protheus/Protheus.png", desc: "ERP Protheus" }
-        ]
-    },
-    {
-        id: 5,
         title: "FREELANCER",
         description: "Descrição detalhada do projeto 2.",
         images: [
             { src: "./images/freelancer/Freelance-Listech.png", desc: "Projeto Freelancer feito para empresa Listech Informática." }
         ]
+    },
+    {
+        id: 5,
+        title: "PROTHEUS",
+        description: "Descrição detalhada do projeto 2.",
+        images: [
+            { src: "../images/protheus/Protheus.png", desc: "ERP Protheus" }
+        ]
     }
+    
 ]
 
 document.addEventListener("DOMContentLoaded", () => {
