@@ -35,6 +35,8 @@
 
 .plus {
   width: 300px;
+  height: 106px;
+  
   justify-content: space-evenly;
   text-align: center;
   padding: 10px 0px 10px 0px;
@@ -59,8 +61,9 @@ h5 {
   display: flex;
   justify-content: space-evenly;
   text-align: center;
-  padding: 10px 0px 10px 0px;
+  padding: 10px 0px 20px 0px;
   margin: auto;
+  margin-bottom: 20px;
 }
 
 .project-img {
@@ -73,15 +76,19 @@ h5 {
 }
 .plusCard {
   width: 300px;
-  border: 2px solid #222;
+  height: 460;
+  border: 2px rgba(3, 225, 250, 0.791);
+  background-color: #222;
   border-radius: 10px;
-  box-shadow: 0 2px 4px 2px rgba(3, 225, 250, 0.791);
+  box-shadow: 0 1px 2px 2px rgba(3, 225, 250, 0.791);
 }
 
 .plusCard:hover{
-  border: 2px solid #222;
+  height: 458px;
+  border: 1px solid #222;
   border-radius: 10px;
-  box-shadow: 1px 8px 8px 6px rgba(3, 225, 250, 0.791);
+  box-shadow: 1px 4px 4px 3px rgba(3, 225, 250, 0.791);
+  cursor: pointer;
 }
 .card-img-top {
   height: 250px;
@@ -93,13 +100,8 @@ h5 {
 .card-body {
   height: 210px;
   padding: 10px;
-  background-color: #222;
-}
-
-.card-body:hover {
-  height: 210px;
-  padding: 10px;
-  background-color: #444;
+  
+  border-radius: 5%;
 }
 
 .card-title {
@@ -140,4 +142,437 @@ h1{
   padding: 30px 0px 5px 0px;
 }
 
+/* Responsividade */
 
+/* Para resolução de 1440 x 920 */
+@media (max-width: 1900px) {
+  .side-center img {
+    width: 170px;
+  }
+
+  .side-center h3 {
+    font-size: 16px;
+  }
+
+  .description p{
+    font-size: 12px;
+  }
+
+  .plus {
+    width: 150px;
+  }
+
+  .plus p{
+    font-size: 10px;
+  }
+  .plus h5{
+    font-size: 15px;
+  }
+
+  .plus img {
+    width: 20px;
+  }
+
+  .cards p{
+    font-size: 10px;
+  }
+
+  .cards h5{
+    font-size: 15px;
+  }
+
+ 
+
+  .plusCard {
+    width: 200px;
+    height: 300px;
+  }
+  .card-img-top {
+    height: 158px;
+  }
+  .plusCard:hover{
+    height: 298px;
+  }
+}
+
+@media (max-width: 1430px) {
+  .side-center img {
+    width: 150px;
+  }
+
+  .description p{
+    font-size: 10px;
+  }
+
+  .plus {
+    width: 130px;
+  }
+
+  #plus p{
+    font-size: 10px;
+  }
+  #plus h5{
+    font-size: 13px;
+  }
+
+  .plus {
+    width: 180px;
+  }
+  .plus img {
+    width: 18px;
+  }
+
+  .cards p{
+    font-size: 10px;
+  }
+
+  .cards h5{
+    font-size: 13px;
+  }
+
+ 
+
+  .plusCard {
+    width: 150px;
+    height: 250px;
+  }
+  .card-img-top {
+    height: 130px;
+  }
+  
+  .plusCard:hover{
+    height: 248px;
+  }
+}
+
+@media (max-width: 1100px) {
+  .side-center img {
+    width: 140px;
+  }
+
+  .side-center h3 {
+    font-size: 14px;
+  }
+
+  .description p{
+    font-size: 10px;
+  }
+
+
+  #plus p{
+    font-size: 10px;
+  }
+  #plus h5{
+    font-size: 13px;
+  }
+
+  .plus {    
+    height: 115px;
+  }
+
+  .cards p{
+    font-size: 10px;
+  }
+
+  .cards h5{
+    font-size: 13px;
+  }
+
+ 
+
+  .plusCard {
+    width: 130px;
+    height: 225px;
+    border: 1px rgba(3, 225, 250, 0);
+    background-color: #222;
+    border-radius: 10px;
+    box-shadow: 0 1px 1px 1px rgba(3, 225, 250, 0.174);
+  }
+  .card-img-top {
+    height: 90px;
+  }
+
+  .plusCard:hover{
+    width: 129;
+    height: 224px;
+    border: 0px solid #222;
+    border-radius: 10px;
+    box-shadow: 0px 1px 1px 1px rgba(3, 225, 250, 0.322);
+    cursor: pointer;
+  }
+
+}
+
+@media (max-width: 890px) {
+  .side-center img {
+    width: 110px;
+  }
+
+  .description p{
+    font-size: 10px;
+  }
+
+
+  #plus p{
+    font-size: 10px;
+  }
+  #plus h5{
+    font-size: 10px;
+  }
+
+  .plus {
+    height: 120px;
+  }
+  .plus img {
+    width: 15px;
+  }
+
+  .cards p{
+    font-size: 9px;
+  }
+
+  .cards h5{
+    font-size: 10px;
+  }
+
+ 
+
+  .plusCard {
+    width: 100px;
+    height: 190px;
+    border: 0px rgba(3, 225, 250, 0.791);
+    box-shadow: 0px 1px 1px 1px rgba(3, 225, 250, 0.718);
+  }
+  .card-img-top {
+    height: 90px;
+  }
+
+  .card-title {
+    display: none;
+  }
+
+  .card-body {
+    height: 98px;
+  }
+
+  .plusCard:hover{
+    height: none;
+    border: none;
+    border-radius: 10px;
+    box-shadow: none;
+    cursor: pointer;
+  }
+
+
+}
+
+@media (max-width: 770px) {
+  .side-center img {
+    width: 100px;
+  }
+
+  .side-center h3 {
+    font-size: 11px;
+  }
+
+  .description {
+    width: 80%;
+  }
+
+  .description p{
+    font-size: 10px;
+  }
+
+  .plus {
+    width: 110px;
+  }
+
+  #plus p{
+    font-size: 10px;
+    display: none;
+  }
+  #plus h5{
+    font-size: 10px;
+  }
+
+  .plus {
+    height: 130px;
+  }
+  
+
+  .cards p{
+    font-size: 9px;
+  }
+
+  .cards h5{
+    font-size: 10px;
+  }
+
+ 
+
+  .plusCard {
+    width: 90px;
+    height: 175px;
+  }
+
+  .card-img-top {
+    height: 90px;
+  }
+
+  .card-title {
+    display: none;
+  }
+
+
+}
+
+@media (max-width: 650px) {
+  .side-center img {
+    width: 95px;
+  }
+
+  .side-center h3 {
+    font-size: 10px;
+  }
+
+  .description p{
+    font-size: 7px;
+  }
+
+  .plus {
+    width: 110px;
+    }
+
+  #plus p{
+    font-size: 7px;
+  }
+  #plus h5{
+    font-size: 9px;
+  }
+
+  .plus {
+    width: 100px;
+    height: 125px;
+  }
+
+  .cards {
+    width: 400px;
+    display: block;
+    margin: auto;
+  }
+
+  .cards p{
+    font-size: 7px;
+  }
+
+  .cards h5{
+    font-size: 9px;
+  }
+
+ 
+
+  .plusCard {
+    width: 400px;
+    height: 500px;
+    display: block;
+    margin-bottom: 30px;
+    margin: auto;
+  }
+  .card-img-top {
+    height: 280px;
+  }
+
+  .card-title {
+    display: block;
+  }
+
+}
+
+@media (max-width: 770px) {
+  .side-center img {
+    width: 100px;
+  }
+
+  .side-center h3 {
+    font-size: 11px;
+  }
+
+  .description p{
+    font-size: 10px;
+  }
+
+  .plus {
+    width: 110px;
+  }
+
+  #plus p{
+    font-size: 10px;
+    display: none;
+  }
+  #plus h5{
+    font-size: 10px;
+  }
+
+  .plus {
+    height: 130px;
+  }
+  
+
+  .cards p{
+    font-size: 9px;
+  }
+
+  .cards h5{
+    font-size: 10px;
+  }
+
+ 
+
+  .plusCard {
+    width: 90px;
+    height: 175px;
+  }
+
+  .card-img-top {
+    height: 90px;
+  }
+
+  .card-title {
+    display: none;
+  }
+
+
+}
+
+@media (max-width: 650px) {
+  .side-center img {
+    width: 70px;
+  }
+
+  .side-center h3 {
+    font-size: 10px;
+  }
+
+  .description p{
+    font-size: 7px;
+  }
+
+  .plus-container {
+    display: none;
+  }
+
+  .plusCard {
+    width: 300px;
+    height: 280px;
+    display: block;
+    margin-bottom: 25px;
+  }
+  .card-img-top {
+    height: 180px;
+  }
+
+  .card-title {
+    display: block;
+  }
+
+}

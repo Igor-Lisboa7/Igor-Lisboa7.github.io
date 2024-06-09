@@ -105,3 +105,29 @@ button {
 button:hover {
   background-color: #00b2e0;
 }
+
+
+
+
+
+@media (max-width: 770px) {
+  .container-1 {
+    width: 90%;
+    height: 690px;
+  }
+}
+
+@media (max-width: 650px) {
+  .container-1 {
+      width: 98%;
+      height: 440px;
+  }
+}
+
+@media (max-width: 395px) {
+  .container-1 {
+      width: 98%;
+      height: 480px;
+  }
+}
+
