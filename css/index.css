@@ -78,9 +78,10 @@ h5 {
   width: 300px;
   height: 460;
   border: 2px rgba(3, 225, 250, 0.791);
-  background-color: #222;
+  background-color: #222222a7;
   border-radius: 10px;
   box-shadow: 0 1px 2px 2px rgba(3, 225, 250, 0.791);
+ 
 }
 
 .plusCard:hover{
@@ -89,6 +90,7 @@ h5 {
   border-radius: 10px;
   box-shadow: 1px 4px 4px 3px rgba(3, 225, 250, 0.791);
   cursor: pointer;
+ 
 }
 .card-img-top {
   height: 250px;
