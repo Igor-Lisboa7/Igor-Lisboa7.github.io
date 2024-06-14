@@ -39,7 +39,7 @@
     padding: 20px 0;
 }
 
-.about-me img {  
+.about-me img {
     width: 152px;
     height: 150px;
     box-shadow: 1px 2px 1px 1px rgba(2, 192, 235, 0.911);
@@ -91,6 +91,36 @@
     display: table;
 }
 
+.plus-container {
+    width: 85%;
+    margin: auto;
+}
+
+#plus {
+    display: flex;
+    justify-content: space-evenly;
+    text-align: center;
+    font-family: 'Cormorant Garamond', serif;
+    margin-top: 35px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.plus {
+    width: 300px;
+    height: 106px;
+
+    justify-content: space-evenly;
+    text-align: center;
+    padding: 10px 0px 10px 0px;
+
+}
+
+h5 {
+    padding-top: 5px;
+}
+
 .contact {
     padding: 2rem 0;
 }
@@ -108,7 +138,7 @@
 .contact form input[type="text"],
 .contact form input[type="email"],
 .contact form textarea {
-    width: 100%;
+    width: 80%;
     padding: 0.5rem;
     margin-bottom: 1rem;
     border: none;
@@ -134,8 +164,43 @@
     border-radius: 5px;
 }
 
-.contact form button:hover {
-    background-color: #00b2e0;
+#qualificação {
+    font-family: 'Times New Roman', Sans-serif;
+    display: flex;
+    width: 400px;
+    height: 80px;
+    margin: auto;
+    padding-top: 80px;
+    padding-bottom: 50px;
+    align-content: center;
+    align-items: flex-end;
+    flex-wrap: nowrap;
+    flex-direction: row;
+}
+
+.timeline {
+   
+    display: flex;
+    justify-content: space-evenly;
+    
+}
+
+.checkpoint .card-check {
+    border: 2px solid #28daf1;
+    border-radius: 1em;
+    padding: 1em;
+    width: 420px;
+    height: 486px;
+    justify-content: space-evenly;
+    margin: auto;
+    margin-bottom: 20px;
+    font-family: 'Verdana', serif;
+    color: #d0d0d0;
+    font-size: 12px;
+}
+
+.checkpoint .card-check h3 {
+    font-size: 20px;
 }
 
 footer {
