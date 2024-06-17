@@ -1,4 +1,4 @@
-// Inicio da modal
+// Array de Projetos
 const projects = [
     {
         id: 1,
@@ -162,7 +162,9 @@ const sobreModal = [
     }
     
 ]
+// Fim do Array de Projetos
 
+// Inicio da modal
 document.addEventListener("DOMContentLoaded", () => {
     const modal = document.getElementById("modal");
     const modalTitle = document.getElementById("modal-title");
@@ -206,9 +208,7 @@ document.addEventListener("DOMContentLoaded", () => {
         }
     });
 });
-
 // Fim da modal
-
 
 // Modal 2
 document.addEventListener("DOMContentLoaded", () => {
@@ -254,7 +254,6 @@ document.addEventListener("DOMContentLoaded", () => {
         }
     });
 });
-
 // Fim da modal 2
 
 // Modal 3
@@ -301,5 +300,4 @@ document.addEventListener("DOMContentLoaded", () => {
         }
     });
 });
-
 // Fim da modal 3
