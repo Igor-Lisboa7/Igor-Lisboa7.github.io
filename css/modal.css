@@ -44,9 +44,25 @@
   margin: 1rem 0;
 }
 
+.modal-imagem {
+  width: 100%;
+  border-radius: 4%;
+  margin: 1rem 0;
+  margin: auto;
+}
+
 .modal-img-desc {
   text-align: center;
   margin-top: -10px;
   font-size: 1rem;
 }
 
+#modal-gallery {
+  margin: auto;
+  width: 100%;
+}
+
+#modal-sobre-gallery {
+  margin: auto;
+  width: 600px;
+}

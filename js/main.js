@@ -1,4 +1,4 @@
-// Inicio da modal
+// Array de Projetos
 const projects = [
     {
         id: 1,
@@ -55,9 +55,9 @@ const plusCards = [
         description: "Descrição detalhada do projeto 2.",
         images: [
             { src: "./images/certificate/Front-end.png", desc: "Certificado Front-End" },
-            { src: "./images/certificate/Back-end.png", desc: "Certificado Front-End" },
-            { src: "./images/certificate/Computer-Science.png", desc: "Certificado Front-End" },
-            { src: "./images/certificate/Totvs-Certificate-Fluig.png", desc: "Certificado Front-End" }
+            { src: "./images/certificate/Back-end.png", desc: "Certificado Back-End" },
+            { src: "./images/certificate/Computer-Science.png", desc: "Certificado Computer Science" },
+            { src: "./images/certificate/Totvs-Certificate-Fluig.png", desc: "Certificado Totvs Fluig Dev Start" }
         ]
     },
     {
@@ -66,8 +66,8 @@ const plusCards = [
         description: "Projetos feitos na Trybe usados como 'prova' onde cada requisito contava pontos.",
         images: [
             { src: "./images/ptoject-Trybe/Trybewarts/Trybewarts.png", desc: "Projeto Trybewarts" },
-            { src: "./images/ptoject-Trybe/Gerador-de-senha/Gerenciador-de-senha.png", desc: "Gerenciador de Senhas" },
-            { src: "./images/ptoject-Trybe/TrybeTunes/TrybeTunes.png", desc: "TrybeTunes" }
+            { src: "./images/ptoject-Trybe/Gerador-de-senha/Gerenciador-de-senha.png", desc: "Projeto Gerenciador de Senhas" },
+            { src: "./images/ptoject-Trybe/TrybeTunes/TrybeTunes.png", desc: "Projeto TrybeTunes" }
         ]
     },
     {
@@ -84,7 +84,7 @@ const plusCards = [
         title: "FREELANCER",
         description: "Descrição detalhada do projeto 2.",
         images: [
-            { src: "./images/freelancer/Freelance-Listech.png", desc: "Projeto Freelancer feito para empresa Listech Informática." }
+            { src: "./images/freelancer/Freelance-Listech.png", desc: "Projeto Freelancer Listech Informática." }
         ]
     },
     {
@@ -98,6 +98,73 @@ const plusCards = [
     
 ]
 
+const sobreModal = [
+
+    {
+        id: 2,
+        title: "Eu minha Noiva e o Marlon",
+        description: "Momentos de familia.",
+        images: [
+            { src: "../images/profile/sobre/marlon-sil-eu2.jpg"},
+        ]
+    },
+    {
+        id: 3,
+        title: "Minha Noiva e Eu",
+        description: "Mais sobre minha familia.",
+        images: [
+            { src: "../images/profile/sobre/noiva-sil.jpg"},
+            { src: "../images/profile/sobre/noiva-sil2.jpg"}
+        ]
+    },
+    {
+        id: 4,
+        title: "Border Collie!",
+        description: "Mais sobre Border Collie.",
+        images: [
+            { src: "../images/profile/sobre/marlon-e-eu2.jpg"},
+            { src: "../images/profile/sobre/dogs5.jpg"},
+            { src: "../images/profile/sobre/dogs3.jpg"},
+            { src: "../images/profile/sobre/dogs2.jpg"},
+            { src: "../images/profile/sobre/dogs4.jpg"},
+            
+        ]
+    },
+    {
+        id: 5,
+        title: "Meu Hobby!",
+        description: "Mais sobre hardware.",
+        images: [
+            { src: "../images/profile/sobre/hardware4.jpg"},
+            { src: "../images/profile/sobre/hardware5.jpg"},
+            { src: "../images/profile/sobre/hardware6.jpg"},
+            { src: "../images/profile/sobre/hardware7.jpg"},
+        ]
+    },
+    {
+        id: 6,
+        title: "Trybe!",
+        description: "mais sobre montagem de Desktop.",
+        images: [
+            { src: "../images/profile/sobre/Trybe.jpg"},
+            { src: "../images/profile/sobre/Trybe2.jpg"},
+            { src: "../images/profile/sobre/Trybe3.jpg"}
+        ]
+    },
+    {
+        id: 7,
+        title: "PROTHEUS",
+        description: "mais sobre montagem de Desktop.",
+        images: [
+            { src: "../images/profile/sobre/multitecnica2.jpg"},
+            { src: "../images/profile/sobre/multitecnica3.jpg"},
+        ]
+    }
+    
+]
+// Fim do Array de Projetos
+
+// Inicio da modal
 document.addEventListener("DOMContentLoaded", () => {
     const modal = document.getElementById("modal");
     const modalTitle = document.getElementById("modal-title");
@@ -120,7 +187,7 @@ document.addEventListener("DOMContentLoaded", () => {
                 imgElement.className = 'modal-img';
 
                 const imgDesc = document.createElement('p');
-                imgDesc.textContent = img.desc;
+                imgDesc.textContent = img;
                 imgDesc.className = 'modal-img-desc';
 
                 modalGallery.appendChild(imgElement);
@@ -141,9 +208,7 @@ document.addEventListener("DOMContentLoaded", () => {
         }
     });
 });
-
 // Fim da modal
-
 
 // Modal 2
 document.addEventListener("DOMContentLoaded", () => {
@@ -189,5 +254,50 @@ document.addEventListener("DOMContentLoaded", () => {
         }
     });
 });
-
 // Fim da modal 2
+
+// Modal 3
+document.addEventListener("DOMContentLoaded", () => {
+    const modal = document.getElementById("modal");
+    const modalTitle = document.getElementById("modal-title");
+    const modalDescription = document.getElementById("modal-description");
+    const modalGallery = document.getElementById("modal-sobre-gallery");
+    const closeModal = document.getElementsByClassName("close")[0];
+
+    document.querySelectorAll('.sobreMim').forEach(sobreMim => {
+        sobreMim.addEventListener('click', () => {
+            const sobreMimId = sobreMim.getAttribute('data-project');
+            const projectData = sobreModal.find(p => p.id == sobreMimId);
+
+            modalTitle.textContent = projectData.title;
+            modalDescription.textContent = projectData.description;
+            modalGallery.innerHTML = '';
+            projectData.images.forEach(img => {
+                const imgElement = document.createElement('img');
+                imgElement.src = img.src;
+                imgElement.alt = projectData.title;
+                imgElement.className = 'modal-imagem';
+
+                const imgDesc = document.createElement('p');
+                imgDesc.textContent = img.desc;
+                imgDesc.className = 'modal-img-desc';
+
+                modalGallery.appendChild(imgElement);
+                modalGallery.appendChild(imgDesc);
+            });
+
+            modal.style.display = "block";
+        });
+    });
+
+    closeModal.addEventListener('click', () => {
+        modal.style.display = "none";
+    });
+
+    window.addEventListener('click', (event) => {
+        if (event.target == modal) {
+            modal.style.display = "none";
+        }
+    });
+});
+// Fim da modal 3
