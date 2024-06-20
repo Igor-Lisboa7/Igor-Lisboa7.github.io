@@ -62,8 +62,9 @@ footer {
   color: #888888;
   text-align: center;
   align-items: center;
-  padding: 5px 0px 5px 0px;
+  padding: 20px 10px 80px 10px;
   margin: auto;
+ 
   font-size: 12px;
 }
 
@@ -75,6 +76,10 @@ footer {
   text-decoration: none;
 }
 
+
+footer p{
+  padding-top: 20px;
+}
 
 
 .content-network a {

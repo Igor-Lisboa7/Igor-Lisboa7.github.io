@@ -1,0 +1,133 @@
+/* Estilos globais */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    color: #333;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+/* Header e Navbar */
+.custom-header {
+    margin-bottom: 20px;
+}
+
+.navbar-dark .navbar-toggler {
+    border-color: rgba(255, 255, 255, 0.1);
+}
+
+.navbar-dark .navbar-toggler-icon {
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba%28255, 255, 255, 0.5%29' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
+}
+
+.navbar-brand img {
+    width: 40px;
+}
+
+.navbar-nav .nav-item .nav-link {
+    color: #fff;
+}
+
+.navbar-nav .nav-item .nav-link:hover {
+    color: #ddd;
+}
+
+/* Main Section */
+.container-1 {
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+    margin-bottom: 20px;
+}
+
+.about-me h1 {
+    margin-bottom: 20px;
+}
+
+.about-me p {
+    text-align: justify;
+    margin-bottom: 20px;
+}
+
+.left-circle, .right-circle {
+    border-radius: 50%;
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    margin: 10px;
+}
+
+.left-circle {
+    float: left;
+}
+
+.right-circle {
+    float: right;
+}
+
+.container-skill {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.container-skill .column {
+    flex: 1;
+    margin: 10px;
+    min-width: 250px;
+}
+
+.container-skill h2 {
+    background-color: #444;
+    color: #fff;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.container-skill ul {
+    list-style: none;
+    padding: 0;
+}
+
+.container-skill li {
+    background-color: #eee;
+    margin: 5px 0;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+/* Footer */
+footer {
+    background-color: #444;
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+    margin-top: 20px;
+}
+
+.Networking {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.Networking .content-network {
+    margin: 10px;
+}
+
+.Networking img {
+    max-width: 40px;
+    margin-right: 10px;
+    vertical-align: middle;
+}
+
+.compiled {
+    margin-top: 20px;
+}
+
+.compiled p {
+    margin: 0;
+}
