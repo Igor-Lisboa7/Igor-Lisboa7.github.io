@@ -1,4 +1,6 @@
-// Array de Projetos
+//INICIO MODAL
+
+// Array para Modal
 const projects = [
     {
         id: 1,
@@ -162,7 +164,7 @@ const sobreModal = [
     }
     
 ]
-// Fim do Array de Projetos
+// Fim do Array para Modal
 
 // Inicio da modal
 document.addEventListener("DOMContentLoaded", () => {
@@ -301,3 +303,93 @@ document.addEventListener("DOMContentLoaded", () => {
     });
 });
 // Fim da modal 3
+
+//FIM MODAL
+
+//INICIO CARD VIEW 
+
+//Inicio Array Card
+const projectCard = [
+    {
+        id: 1,
+        title: 'Projeto 1',
+        description: 'Uma breve descrição do Projeto 1.',
+        details: 'Aqui está uma descrição mais detalhada do Projeto 1...',
+        image: "../images/Project/Jogo-da-Forca/hangman-game.png"
+    },
+    {
+        id: 2,
+        title: 'Projeto 2',
+        description: 'Uma breve descrição do Projeto 2.',
+        details: 'Aqui está uma descrição mais detalhada do Projeto 2...',
+        image: "../images/ptoject-Trybe/Trybewarts/Trybewarts.png"
+    },
+    {
+        id: 3,
+        title: 'Projeto 3',
+        description: 'Uma breve descrição do Projeto 3.',
+        details: 'Aqui está uma descrição mais detalhada do Projeto 3...',
+        image: "images/Project/project3.png"
+    },
+    {
+        id: 4,
+        title: 'Projeto 4',
+        description: 'Uma breve descrição do Projeto 4.',
+        details: 'Aqui está uma descrição mais detalhada do Projeto 4...',
+        image: "images/Project/project4.png"
+    }
+    // Adicione mais projetos conforme necessário
+];
+//Fim Array Card
+
+//Inicio Card-View functions
+
+
+function loadProjectCards() {
+    const projectCardsContainer = document.getElementById('project-cards');
+    projectCard.forEach(project => {
+        const card = document.createElement('div');
+        card.className = 'plusCard';
+        card.setAttribute('data-id', project.id);
+        card.innerHTML = `
+            <img src="${project.image}" class="card-img-top" alt="${project.title}">
+            <div class="card-body">
+                <h5 class="card-title">${project.title}</h5>
+                <p class="card-text">${project.description}</p>
+            </div>
+        `;
+        projectCardsContainer.appendChild(card);
+
+        card.addEventListener('click', () => showProjectDetails(project.id));
+    });
+}
+
+function showProjectDetails(projectId) {
+    const projectDetailsContainer = document.getElementById('project-details');
+    const project = projectCard.find(p => p.id === projectId);
+
+    if (!project) {
+        console.error(`Projeto com ID ${projectId} não encontrado.`);
+        return;
+    }
+
+    if (projectDetailsContainer.dataset.currentId == projectId) {
+        projectDetailsContainer.classList.add('d-none');
+        projectDetailsContainer.removeAttribute('data-current-id');
+        return;
+    }
+
+    projectDetailsContainer.innerHTML = `
+        <h2>${project.title}</h2>
+        <p>${project.details}</p>
+    `;
+
+    projectDetailsContainer.dataset.currentId = projectId;
+    projectDetailsContainer.classList.remove('d-none');
+}
+
+document.addEventListener('DOMContentLoaded', loadProjectCards);
+
+//Fim Card-View functions
+
+// FIM CARD VIEW

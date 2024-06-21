@@ -16,6 +16,7 @@ body {
 #custom-header  {
   position: fixed;
   width: 100%;
+  z-index: 1000; /* Alto valor para garantir que fique acima de outros elementos */
 }
 
 header nav a img {
