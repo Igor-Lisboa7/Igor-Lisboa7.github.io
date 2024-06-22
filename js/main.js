@@ -308,88 +308,182 @@ document.addEventListener("DOMContentLoaded", () => {
 
 //INICIO CARD VIEW 
 
-//Inicio Array Card
-const projectCard = [
-    {
-        id: 1,
-        title: 'Projeto 1',
-        description: 'Uma breve descrição do Projeto 1.',
-        details: 'Aqui está uma descrição mais detalhada do Projeto 1...',
-        image: "../images/Project/Jogo-da-Forca/hangman-game.png"
-    },
-    {
-        id: 2,
-        title: 'Projeto 2',
-        description: 'Uma breve descrição do Projeto 2.',
-        details: 'Aqui está uma descrição mais detalhada do Projeto 2...',
-        image: "../images/ptoject-Trybe/Trybewarts/Trybewarts.png"
-    },
-    {
-        id: 3,
-        title: 'Projeto 3',
-        description: 'Uma breve descrição do Projeto 3.',
-        details: 'Aqui está uma descrição mais detalhada do Projeto 3...',
-        image: "images/Project/project3.png"
-    },
-    {
-        id: 4,
-        title: 'Projeto 4',
-        description: 'Uma breve descrição do Projeto 4.',
-        details: 'Aqui está uma descrição mais detalhada do Projeto 4...',
-        image: "images/Project/project4.png"
-    }
-    // Adicione mais projetos conforme necessário
-];
-//Fim Array Card
+document.addEventListener('DOMContentLoaded', function () {
+    const projects = [
+        {
+            id: 0,
+            title: 'Projeto 0',
+            description: 'Uma breve descrição do Projeto 0.',
+            details: 'Aqui está uma descrição mais detalhada do Projeto 0...',
+            image: "../images/Project/Jogo-da-Forca/hangman-game.png"
+        },
+        {
+            id: 1,
+            title: 'Projeto 1',
+            description: 'Uma breve descrição do Projeto 1.',
+            details: 'Aqui está uma descrição mais detalhada do Projeto 1...',
+            image: "../images/Project/Jogo-da-Forca/hangman-game.png"
+        },
+        {
+            id: 2,
+            title: 'Projeto 2',
+            description: 'Uma breve descrição do Projeto 2.',
+            details: 'Aqui está uma descrição mais detalhada do Projeto 2...',
+            image: "../images/ptoject-Trybe/Trybewarts/Trybewarts.png"
+        },
+        {
+            id: 3,
+            title: 'Projeto 3',
+            description: 'Uma breve descrição do Projeto 3.',
+            details: 'Aqui está uma descrição mais detalhada do Projeto 3...',
+            image: "../images/Project/Jogo-da-Forca/hangman-game.png"
+        },
+        {
+            id: 4,
+            title: 'Projeto 4',
+            description: 'Uma breve descrição do Projeto 4.',
+            details: 'Aqui está uma descrição mais detalhada do Projeto 4...',
+            image: "../images/ptoject-Trybe/Trybewarts/Trybewarts.png"
+        },
+        {
+            id: 5,
+            title: 'Projeto 5',
+            description: 'Uma breve descrição do Projeto 5.',
+            details: 'Aqui está uma descrição mais detalhada do Projeto 5...',
+            image: "../images/Project/Jogo-da-Forca/hangman-game.png"
+        },
+        {
+            id: 6,
+            title: 'Projeto 6',
+            description: 'Uma breve descrição do Projeto 6.',
+            details: 'Aqui está uma descrição mais detalhada do Projeto 6...',
+            image: "../images/ptoject-Trybe/Trybewarts/Trybewarts.png"
+        },
+        {
+            id: 7,
+            title: 'Projeto 7',
+            description: 'Uma breve descrição do Projeto 7.',
+            details: 'Aqui está uma descrição mais detalhada do Projeto 7...',
+            image: "../images/Project/Jogo-da-Forca/hangman-game.png"
+        },
+        {
+            id: 8,
+            title: 'Projeto 8',
+            description: 'Uma breve descrição do Projeto 8.',
+            details: 'Aqui está uma descrição mais detalhada do Projeto 8...',
+            image: "../images/ptoject-Trybe/Trybewarts/Trybewarts.png"
+        },
+        {
+            id: 9,
+            title: 'Projeto 9',
+            description: 'Uma breve descrição do Projeto 9.',
+            details: 'Aqui está uma descrição mais detalhada do Projeto 9...',
+            image: "../images/Project/Jogo-da-Forca/hangman-game.png"
+        },
+        {
+            id: 10,
+            title: 'Projeto 10',
+            description: 'Uma breve descrição do Projeto 10.',
+            details: 'Aqui está uma descrição mais detalhada do Projeto 10...',
+            image: "../images/ptoject-Trybe/Trybewarts/Trybewarts.png"
+        },
+        {
+            id: 11,
+            title: 'Projeto 11',
+            description: 'Uma breve descrição do Projeto 11.',
+            details: 'Aqui está uma descrição mais detalhada do Projeto 11...',
+            image: "../images/Project/Jogo-da-Forca/hangman-game.png"
+        },
+        {
+            id: 12,
+            title: 'Projeto 12',
+            description: 'Uma breve descrição do Projeto 12.',
+            details: 'Aqui está uma descrição mais detalhada do Projeto 12...',
+            image: "../images/ptoject-Trybe/Trybewarts/Trybewarts.png"
+        },
+        {
+            id: 13,
+            title: 'Projeto 13',
+            description: 'Uma breve descrição do Projeto 13.',
+            details: 'Aqui está uma descrição mais detalhada do Projeto 13...',
+            image: "../images/Project/Jogo-da-Forca/hangman-game.png"
+        },
+        {
+            id: 14,
+            title: 'Projeto 14',
+            description: 'Uma breve descrição do Projeto 14.',
+            details: 'Aqui está uma descrição mais detalhada do Projeto 14...',
+            image: "../images/ptoject-Trybe/Trybewarts/Trybewarts.png"
+        }
+    ];
 
-//Inicio Card-View functions
+    const projectList1 = document.getElementById('project-list-1');
+    const projectList2 = document.getElementById('project-list-2');
+    const projectList3 = document.getElementById('project-list-3');
 
+    // Distribuir projetos entre as listas
+    projects.forEach((project, index) => {
+        let listItem = document.createElement('li');
+        listItem.classList.add('list-item');
 
-function loadProjectCards() {
-    const projectCardsContainer = document.getElementById('project-cards');
-    projectCard.forEach(project => {
-        const card = document.createElement('div');
-        card.className = 'plusCard';
-        card.setAttribute('data-id', project.id);
+        let card = document.createElement('div');
+        card.classList.add('project-item');
+        card.dataset.projectId = project.id;
         card.innerHTML = `
-            <img src="${project.image}" class="card-img-top" alt="${project.title}">
+            <img src="${project.image}" class="card-img-top">
             <div class="card-body">
                 <h5 class="card-title">${project.title}</h5>
                 <p class="card-text">${project.description}</p>
             </div>
         `;
-        projectCardsContainer.appendChild(card);
 
-        card.addEventListener('click', () => showProjectDetails(project.id));
+        let details = document.createElement('div');
+        details.classList.add('project-details');
+        details.innerHTML = `
+            <h5>${project.title}</h5>
+            <p>${project.details}</p>
+        `;
+        
+        listItem.appendChild(card);
+        listItem.appendChild(details);
+
+        if (index < 5) {
+            projectList1.appendChild(listItem);
+        } else if (index < 10) {
+            projectList2.appendChild(listItem);
+        } else {
+            projectList3.appendChild(listItem);
+        }
+
+        card.addEventListener('click', function () {
+            let currentDetails = listItem.querySelector('.project-details');
+            let allDetails = document.querySelectorAll('.project-details');
+            
+            // Toggle the display of the clicked card's details
+            if (currentDetails.style.display === 'none' || currentDetails.style.display === '') {
+                allDetails.forEach(detail => detail.style.display = 'none');
+                currentDetails.style.display = 'block';
+            } else {
+                currentDetails.style.display = 'none';
+            }
+        });
     });
-}
 
-function showProjectDetails(projectId) {
-    const projectDetailsContainer = document.getElementById('project-details');
-    const project = projectCard.find(p => p.id === projectId);
+    const containerItems = document.querySelectorAll('.container-item');
+    
+    containerItems.forEach(containerItem => {
+        containerItem.addEventListener('click', function () {
+            const containerId = this.dataset.containerId;
+            const content = document.getElementById(`content-${containerId}`);
+            const allContents = document.querySelectorAll('.container-content');
 
-    if (!project) {
-        console.error(`Projeto com ID ${projectId} não encontrado.`);
-        return;
-    }
-
-    if (projectDetailsContainer.dataset.currentId == projectId) {
-        projectDetailsContainer.classList.add('d-none');
-        projectDetailsContainer.removeAttribute('data-current-id');
-        return;
-    }
-
-    projectDetailsContainer.innerHTML = `
-        <h2>${project.title}</h2>
-        <p>${project.details}</p>
-    `;
-
-    projectDetailsContainer.dataset.currentId = projectId;
-    projectDetailsContainer.classList.remove('d-none');
-}
-
-document.addEventListener('DOMContentLoaded', loadProjectCards);
-
-//Fim Card-View functions
-
+            if (content.style.display === 'none' || content.style.display === '') {
+                allContents.forEach(cont => cont.style.display = 'none');
+                content.style.display = 'block';
+            } else {
+                content.style.display = 'none';
+            }
+        });
+    });
+});
 // FIM CARD VIEW

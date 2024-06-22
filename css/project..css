@@ -1,70 +1,91 @@
-.container {
-  padding: 0px;
+.container-content {
+  width: 98%;
+  height: auto;
   margin: 50px;
-}
-.row {
-  width: 214%;
-}
-
-.card {
-  cursor: pointer;
-  transition: transform 0.2s;
-  margin-bottom: 10px;
-  background-color: black;
-  border: 1px solid #c6c3c3ee;
-  border: 2px solid #222;
-  border-radius: 10px;
+  margin: auto;
+  display: none;
 }
 
-.card:hover {
-  transform: scale(1.02);
+.container-item {
+  width: 100%;
 }
 
-.plusCard {
-  width: 80%;
-  cursor: pointer;
-  transition: transform 0.2s;
-  margin-bottom: 10px;
-  border: 1px solid #ddd;
-  border-radius: 8px;
-  overflow: hidden;
+.container {
+  width: 98%;
+  margin: 0px;
 }
 
-.plusCard:hover {
-  transform: scale(1.02);
-}
-
-.plusCard img {
+.sub-container {
+  display: flex;
   width: 100%;
   height: auto;
 }
 
+.plusCard {
+  width: 180px;
+  height: 220px;
+  /* border: 2px solid rgba(3, 225, 250, 0.87); */
+  background-color: #222222a7;
+  
+}
+
+.card-img-top {
+  height: 180px;
+  background-color: #222;
+  /* border-top-left-radius: 10px;
+  border-top-right-radius: 10px; */
+}
+
 .card-body {
-  width: 100%;
-  height: 200px;
-  padding: 15px;
+  height: auto;
+  padding: 1px;
+  
+  border-radius: 5%;
+}
+
+.card-body p {
+  margin: auto;
+}
+
+.container-1 {
+}
+
+.list-item {
+  display: flex;
+  width: 98%;
+  margin-top: 50px;
+}
+
+.project-item {
+  width: 50%;
+  height: auto;
+  cursor: pointer;
+  transition: transform 0.2s;
+  margin-left: 20px;
+  margin-bottom: 10px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  overflow: hidden;
   text-align: left;
 }
 
-.espaço {
-  width: 30%;
-  padding: 0px;
-} 
+.project-item:hover {
+  transform: scale(1.02);
+}
 
-.list-group {
+.project-item img {
   width: 100%;
+  height: auto;
 }
 
-.espaço-2 {
-  width: 40%;
-}
-
-#project-details {
-  background: #858484ac;
-  padding: 20px;
-  border: 1px solid #c6c3c3ee;
+.project-details {
+  display: none;
+  background: #949494;
+  padding: 10px;
+  border: 1px solid #ddd;
   border-radius: 8px;
-  width: 100%;
-  height: 700px;
-  z-index: 800; /* Para ficar acima dos outros elementos */
+  margin-left: 20px;
+  width: 72%;
+  height: 450px;
+  align-self: center;
 }
