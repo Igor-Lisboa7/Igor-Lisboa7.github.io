@@ -44,8 +44,8 @@
     transition: transform 0.2s;
 }
 
-p img :hover {
-    transform: scale(1.02);
+p img:hover {
+    transform: scale(1.08);
 
 }
 

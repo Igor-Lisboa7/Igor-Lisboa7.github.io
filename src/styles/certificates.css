@@ -1,0 +1,39 @@
+#qualificação {
+    font-family: 'Times New Roman', Sans-serif;
+    display: flex;
+    width: 400px;
+    height: 80px;
+    margin: auto;
+    padding-top: 80px;
+    padding-bottom: 50px;
+    align-content: center;
+    align-items: flex-end;
+    flex-wrap: nowrap;
+    flex-direction: row;
+}
+
+.timeline {
+    width: 98%;
+    display: flex;
+    justify-content: space-evenly;
+    
+}
+
+.checkpoint .card-check {
+    border: 2px solid #28daf1;
+    border-radius: 1em;
+    padding: 1em;
+    width: 420px;
+    height: 486px;
+    justify-content: space-evenly;
+    margin: auto;
+    margin-bottom: 20px;
+    font-family: 'Verdana', serif;
+    color: #d0d0d0;
+    font-size: 12px;
+    text-align: left;
+}
+
+.checkpoint .card-check h3 {
+    font-size: 20px;
+}

@@ -77,7 +77,7 @@ const plusCards = [
         title: "PROJETOS PESSOAIS",
         description: "Descrição detalhada do projeto 2.",
         images: [
-            { src: "../images/Project/Jogo-da-Forca/hangman-game.png"},
+            { src: "../images/Project/Jogo-da-Forca/hangman-game.png" },
             { src: "../images/Project/Jogo-da-Forca/death.png", desc: "Jogo da Forca 2.0" }
         ]
     },
@@ -97,7 +97,7 @@ const plusCards = [
             { src: "../images/protheus/Protheus.png", desc: "ERP Protheus" }
         ]
     }
-    
+
 ]
 
 const sobreModal = [
@@ -107,7 +107,7 @@ const sobreModal = [
         title: "Eu minha Noiva e o Marlon",
         description: "Momentos de familia.",
         images: [
-            { src: "../images/profile/sobre/marlon-sil-eu2.jpg"},
+            { src: "../images/profile/sobre/marlon-sil-eu2.jpg" },
         ]
     },
     {
@@ -115,8 +115,8 @@ const sobreModal = [
         title: "Minha Noiva e Eu",
         description: "Mais sobre minha familia.",
         images: [
-            { src: "../images/profile/sobre/noiva-sil.jpg"},
-            { src: "../images/profile/sobre/noiva-sil2.jpg"}
+            { src: "../images/profile/sobre/noiva-sil.jpg" },
+            { src: "../images/profile/sobre/noiva-sil2.jpg" }
         ]
     },
     {
@@ -124,12 +124,12 @@ const sobreModal = [
         title: "Border Collie!",
         description: "Mais sobre Border Collie.",
         images: [
-            { src: "../images/profile/sobre/marlon-e-eu2.jpg"},
-            { src: "../images/profile/sobre/dogs5.jpg"},
-            { src: "../images/profile/sobre/dogs3.jpg"},
-            { src: "../images/profile/sobre/dogs2.jpg"},
-            { src: "../images/profile/sobre/dogs4.jpg"},
-            
+            { src: "../images/profile/sobre/marlon-e-eu2.jpg" },
+            { src: "../images/profile/sobre/dogs5.jpg" },
+            { src: "../images/profile/sobre/dogs3.jpg" },
+            { src: "../images/profile/sobre/dogs2.jpg" },
+            { src: "../images/profile/sobre/dogs4.jpg" },
+
         ]
     },
     {
@@ -137,10 +137,10 @@ const sobreModal = [
         title: "Meu Hobby!",
         description: "Mais sobre hardware.",
         images: [
-            { src: "../images/profile/sobre/hardware4.jpg"},
-            { src: "../images/profile/sobre/hardware5.jpg"},
-            { src: "../images/profile/sobre/hardware6.jpg"},
-            { src: "../images/profile/sobre/hardware7.jpg"},
+            { src: "../images/profile/sobre/hardware4.jpg" },
+            { src: "../images/profile/sobre/hardware5.jpg" },
+            { src: "../images/profile/sobre/hardware6.jpg" },
+            { src: "../images/profile/sobre/hardware7.jpg" },
         ]
     },
     {
@@ -148,9 +148,9 @@ const sobreModal = [
         title: "Trybe!",
         description: "mais sobre montagem de Desktop.",
         images: [
-            { src: "../images/profile/sobre/Trybe.jpg"},
-            { src: "../images/profile/sobre/Trybe2.jpg"},
-            { src: "../images/profile/sobre/Trybe3.jpg"}
+            { src: "../images/profile/sobre/Trybe.jpg" },
+            { src: "../images/profile/sobre/Trybe2.jpg" },
+            { src: "../images/profile/sobre/Trybe3.jpg" }
         ]
     },
     {
@@ -158,11 +158,11 @@ const sobreModal = [
         title: "PROTHEUS",
         description: "mais sobre montagem de Desktop.",
         images: [
-            { src: "../images/profile/sobre/multitecnica2.jpg"},
-            { src: "../images/profile/sobre/multitecnica3.jpg"},
+            { src: "../images/profile/sobre/multitecnica2.jpg" },
+            { src: "../images/profile/sobre/multitecnica3.jpg" },
         ]
     }
-    
+
 ]
 // Fim do Array para Modal
 
@@ -309,119 +309,164 @@ document.addEventListener("DOMContentLoaded", () => {
 //INICIO CARD VIEW 
 
 document.addEventListener('DOMContentLoaded', function () {
+
     const projects = [
         {
             id: 0,
             title: 'Projeto 0',
             description: 'Uma breve descrição do Projeto 0.',
             details: 'Aqui está uma descrição mais detalhada do Projeto 0...',
-            image: "../images/Project/Jogo-da-Forca/hangman-game.png"
+            image: "/src/assets/images/projects/personal-project/Jogo-da-Forca/hangman-game.png"
         },
         {
             id: 1,
             title: 'Projeto 1',
             description: 'Uma breve descrição do Projeto 1.',
             details: 'Aqui está uma descrição mais detalhada do Projeto 1...',
-            image: "../images/Project/Jogo-da-Forca/hangman-game.png"
+            image: "/src/assets/images/projects/personal-project/Jogo-da-Forca/death.png"
         },
         {
             id: 2,
             title: 'Projeto 2',
             description: 'Uma breve descrição do Projeto 2.',
             details: 'Aqui está uma descrição mais detalhada do Projeto 2...',
-            image: "../images/ptoject-Trybe/Trybewarts/Trybewarts.png"
+            image: "/src/assets/images/projects/personal-project/Jogo-da-Forca/hangman-game.png"
         },
         {
             id: 3,
             title: 'Projeto 3',
             description: 'Uma breve descrição do Projeto 3.',
             details: 'Aqui está uma descrição mais detalhada do Projeto 3...',
-            image: "../images/Project/Jogo-da-Forca/hangman-game.png"
+            image: "/src/assets/images/projects/personal-project/Jogo-da-Forca/hangman-game4.png"
         },
         {
             id: 4,
             title: 'Projeto 4',
             description: 'Uma breve descrição do Projeto 4.',
             details: 'Aqui está uma descrição mais detalhada do Projeto 4...',
-            image: "../images/ptoject-Trybe/Trybewarts/Trybewarts.png"
+            image: "/src/assets/images/projects/personal-project/Jogo-da-Forca/hangman-game5.png"
         },
         {
             id: 5,
             title: 'Projeto 5',
             description: 'Uma breve descrição do Projeto 5.',
             details: 'Aqui está uma descrição mais detalhada do Projeto 5...',
-            image: "../images/Project/Jogo-da-Forca/hangman-game.png"
+            image: "/src/assets/images/projects/ptoject-Trybe/Trybewarts/Trybewarts.png"
         },
         {
             id: 6,
             title: 'Projeto 6',
             description: 'Uma breve descrição do Projeto 6.',
             details: 'Aqui está uma descrição mais detalhada do Projeto 6...',
-            image: "../images/ptoject-Trybe/Trybewarts/Trybewarts.png"
+            image: "/src/assets/images/projects/ptoject-Trybe/TrybeTunes/TrybeTunes.png"
         },
         {
             id: 7,
             title: 'Projeto 7',
             description: 'Uma breve descrição do Projeto 7.',
             details: 'Aqui está uma descrição mais detalhada do Projeto 7...',
-            image: "../images/Project/Jogo-da-Forca/hangman-game.png"
+            image: "/src/assets/images/projects/ptoject-Trybe/Gerador-de-senha/Gerenciador-de-senha.png"
         },
         {
             id: 8,
             title: 'Projeto 8',
             description: 'Uma breve descrição do Projeto 8.',
             details: 'Aqui está uma descrição mais detalhada do Projeto 8...',
-            image: "../images/ptoject-Trybe/Trybewarts/Trybewarts.png"
+            image: "/src/assets/images/projects/ptoject-Trybe/Trybewarts/Trybewarts.png"
         },
         {
             id: 9,
             title: 'Projeto 9',
             description: 'Uma breve descrição do Projeto 9.',
             details: 'Aqui está uma descrição mais detalhada do Projeto 9...',
-            image: "../images/Project/Jogo-da-Forca/hangman-game.png"
+            image: "/src/assets/images/projects/ptoject-Trybe/Trybewarts/Trybewarts.png"
         },
         {
             id: 10,
             title: 'Projeto 10',
             description: 'Uma breve descrição do Projeto 10.',
             details: 'Aqui está uma descrição mais detalhada do Projeto 10...',
-            image: "../images/ptoject-Trybe/Trybewarts/Trybewarts.png"
+            image: "/src/assets/images/projects/freelancer/Freelance-Listech.png"
         },
         {
             id: 11,
             title: 'Projeto 11',
             description: 'Uma breve descrição do Projeto 11.',
             details: 'Aqui está uma descrição mais detalhada do Projeto 11...',
-            image: "../images/Project/Jogo-da-Forca/hangman-game.png"
+            image: "/src/assets/images/projects/ptoject-Trybe/TrybeTunes/TrybeTunes.png"
         },
         {
             id: 12,
             title: 'Projeto 12',
             description: 'Uma breve descrição do Projeto 12.',
             details: 'Aqui está uma descrição mais detalhada do Projeto 12...',
-            image: "../images/ptoject-Trybe/Trybewarts/Trybewarts.png"
+            image: "/src/assets/images/projects/ptoject-Trybe/TrybeTunes/TrybeTunes.png"
         },
         {
             id: 13,
             title: 'Projeto 13',
             description: 'Uma breve descrição do Projeto 13.',
             details: 'Aqui está uma descrição mais detalhada do Projeto 13...',
-            image: "../images/Project/Jogo-da-Forca/hangman-game.png"
+            image: "/src/assets/images/totvs/protheus/Protheus.png"
         },
         {
             id: 14,
             title: 'Projeto 14',
             description: 'Uma breve descrição do Projeto 14.',
             details: 'Aqui está uma descrição mais detalhada do Projeto 14...',
-            image: "../images/ptoject-Trybe/Trybewarts/Trybewarts.png"
+            image: "/src/assets/images/totvs/fluig/fluig.png"
+        },
+        {
+            id: 15,
+            title: 'Projeto 15',
+            description: 'Uma breve descrição do Projeto 15.',
+            details: 'Aqui está uma descrição mais detalhada do Projeto 15...',
+            image: "/src/assets/images/totvs/protheus-fluig.png"
+        },
+        {
+            id: 16,
+            title: 'Projeto 16',
+            description: 'Uma breve descrição do Projeto 16.',
+            details: 'Aqui está uma descrição mais detalhada do Projeto 16...',
+            image: "/src/assets/images/totvs/protheus-fluig.png"
         }
     ];
-
+    const projectImages = [
+        {
+            projectId: 0,
+            images: [
+                "/src/assets/images/projects/personal-project/Jogo-da-Forca/hangman-game.png",
+                "/src/assets/images/projects/personal-project/Jogo-da-Forca/death.png",
+                "/src/assets/images/projects/personal-project/Jogo-da-Forca/hangman-game4.png",
+                "/src/assets/images/totvs/fluig/fluig.png",
+                "/src/assets/images/totvs/fluig/fluig.png",
+                "/src/assets/images/totvs/fluig/fluig.png",
+                "/src/assets/images/totvs/fluig/fluig.png"
+            ]
+        },
+        {
+            projectId: 1,
+            images: [
+                "/src/assets/images/projects/personal-project/Jogo-da-Forca/hangman-game.png",
+                "/src/assets/images/projects/personal-project/Jogo-da-Forca/death.png",
+                "/src/assets/images/projects/personal-project/Jogo-da-Forca/hangman-game4.png",
+                "/src/assets/images/totvs/fluig/fluig.png",
+                "/src/assets/images/totvs/fluig/fluig.png",
+                "/src/assets/images/totvs/fluig/fluig.png",
+                "/src/assets/images/totvs/fluig/fluig.png"
+            ]
+        },
+        // ... outras imagens de projetos
+    ];
     const projectList1 = document.getElementById('project-list-1');
     const projectList2 = document.getElementById('project-list-2');
     const projectList3 = document.getElementById('project-list-3');
+    const projectList4 = document.getElementById('project-list-4');
 
-    // Distribuir projetos entre as listas
+
+    // Inicializa o container-0 como display: flex
+    const container0 = document.getElementById('cubo');
+
     projects.forEach((project, index) => {
         let listItem = document.createElement('li');
         listItem.classList.add('list-item');
@@ -439,11 +484,33 @@ document.addEventListener('DOMContentLoaded', function () {
 
         let details = document.createElement('div');
         details.classList.add('project-details');
-        details.innerHTML = `
-            <h5>${project.title}</h5>
-            <p>${project.details}</p>
-        `;
-        
+        details.innerHTML  = `
+        <div class="details-wrapper">
+            <div class="details-left">
+                <h5>${project.title}</h5>
+                <p>${project.details}</p>
+            </div>
+            <div class="details-right">
+                <div id="carousel-${project.id}" class="carousel">
+                    <button class="prev">❮</button>
+                    <div class="carousel-images"></div>
+                    <button class="next">❯</button>
+                </div>
+            </div>
+        </div>
+    `;
+
+        let projectImagesData = projectImages.find(img => img.projectId === project.id);
+        if (projectImagesData) {
+            let carouselImagesDiv = details.querySelector(`#carousel-${project.id} .carousel-images`);
+            projectImagesData.images.forEach((img, idx) => {
+                let imgElement = document.createElement('img');
+                imgElement.src = img;
+                if (idx === 0) imgElement.classList.add('active');
+                carouselImagesDiv.appendChild(imgElement);
+            });
+        }
+
         listItem.appendChild(card);
         listItem.appendChild(details);
 
@@ -451,15 +518,16 @@ document.addEventListener('DOMContentLoaded', function () {
             projectList1.appendChild(listItem);
         } else if (index < 10) {
             projectList2.appendChild(listItem);
-        } else {
+        } else if (index < 13) {
             projectList3.appendChild(listItem);
+        } else {
+            projectList4.appendChild(listItem);
         }
 
         card.addEventListener('click', function () {
             let currentDetails = listItem.querySelector('.project-details');
             let allDetails = document.querySelectorAll('.project-details');
             
-            // Toggle the display of the clicked card's details
             if (currentDetails.style.display === 'none' || currentDetails.style.display === '') {
                 allDetails.forEach(detail => detail.style.display = 'none');
                 currentDetails.style.display = 'block';
@@ -483,7 +551,33 @@ document.addEventListener('DOMContentLoaded', function () {
             } else {
                 content.style.display = 'none';
             }
+
+            if (content.style.display == 'none') {
+                container0.style.display = 'flex';
+            } else {
+                container0.style.display = 'block';
+            }
         });
+    });
+
+    document.addEventListener('click', function (e) {
+        if (e.target.classList.contains('prev') || e.target.classList.contains('next')) {
+            const carousel = e.target.closest('.carousel');
+            const imagesDiv = carousel.querySelector('.carousel-images');
+            const images = Array.from(imagesDiv.children);
+            const activeIndex = images.findIndex(img => img.classList.contains('active'));
+
+            images[activeIndex].classList.remove('active');
+
+            let newIndex;
+            if (e.target.classList.contains('prev')) {
+                newIndex = (activeIndex - 1 + images.length) % images.length;
+            } else {
+                newIndex = (activeIndex + 1) % images.length;
+            }
+
+            images[newIndex].classList.add('active');
+        }
     });
 });
 // FIM CARD VIEW
