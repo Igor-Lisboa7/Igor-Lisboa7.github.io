@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meu Portfólio</title>
+
+    <!-- <CSS> bootstrap </CSS> -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+    <!-- <CSS> bootstrap </CSS> -->
+
+    <link rel="stylesheet" href="/src/styles/reset.css">
+    <link rel="stylesheet" href="/src/styles/styles.css">
+    <link rel="stylesheet" href="/src/styles/modal.css">
+    <link rel="stylesheet" href="/src/styles/project.css">
+
+</head>
+
+<body>
+    <header class="custom-header">
+        <nav id="custom-header" class="navbar navbar-dark" style="background-color:#444;">
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo03"
+                aria-controls="navbarTogglerDemo03" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <a id="disappear" class="navbar-brand" href="/index.html"><img src="/src/assets/images/logo/full-stack-.png"
+                    alt=""></a>
+
+            <div class="collapse navbar-collapse" id="navbarTogglerDemo03">
+                <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="/index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/src/pages/about.html">Sobre</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/src/pages/projects.html">Projetos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/src/pages/certificates.html">Certificados</a>
+                    </li>
+                    <li class="nav-item">
+                        <a id="disappear-two" class="nav-link" href="/index.html">Dark Mod / Clean Mod (em
+                            breve)</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+
+        <section class="container-1">
+            <article class="Content-1">
+                <div class="side-center">
+                    <br><br>
+                    <h3>Bem-vindo à minha página de projetos! </h3>
+                    <h6>Aqui você encontrará uma coleção dos meus trabalhos mais significativos, divididos em quatro categorias principais</h6>
+                    <br>
+                    <p class="left"><b>Projetos Pessoais:</b> Esta seção contém os projetos que desenvolvi por conta própria, explorando novas ideias e tecnologias. Cada projeto reflete minha paixão por resolver problemas e criar soluções inovadoras.</p>
+
+                    <p class="left"><b>Projetos Trybe:</b> Durante minha formação na Trybe, participei de diversos projetos desafiadores que ampliaram minhas habilidades técnicas e colaborativas. Aqui você pode ver alguns dos trabalhos que realizei ao longo do curso.</p>
+
+                    <p class="left"><b>Projetos Freelancer:</b> Esta seção destaca os projetos que desenvolvi como freelancer, trabalhando diretamente com clientes para atender suas necessidades específicas e entregar soluções de alta qualidade.</p>
+
+                    <p class="left"><b>Protheus e Fluig:</b> Nesta categoria, você encontrará os projetos relacionados ao Protheus e Fluig, sistemas com os quais trabalhei no Grupo Multitécnica. Esses projetos envolvem a integração e otimização de processos empresariais.</p>
+                    <br>
+
+                    <p class="left">Cada categoria possui cards interativos que, ao serem clicados, exibem uma lista detalhada de projetos. Para cada projeto, você pode visualizar uma descrição breve e, ao clicar na lista, explorar mais detalhes e imagens em um carrossel dinâmico. À medida que você navega pelas imagens, a descrição do projeto também se atualiza, oferecendo uma visão completa do meu trabalho e das soluções que desenvolvi.</p>
+                    <br>
+                    <p class="left">Explore à vontade e sinta-se à vontade para entrar em contato caso tenha alguma dúvida ou queira saber mais sobre qualquer projeto. </p>
+                    
+                    <br><br>
+
+                </div>
+                <br>
+
+                <div class="container-0" id="cubo">
+                    <div class="container-item" data-container-id="1">
+                        <div class="plusCard2">
+                            <img src="/src/assets/images/projects/personal-project/Jogo-da-Forca/hangman-game.png" class="card-img-top">
+                            <div class="card-body">
+                                <p class="card-title">PROJETOS <br>PESSOAIS</p>
+                            </div>
+                        </div> 
+                    </div>
+                    <div class="container-content" id="content-1">
+                        <ul class="list-unstyled" id="project-list-1"></ul>
+                    </div>
+                    <div class="container-item" data-container-id="2"><div class="plusCard2" data-project="3">
+                        <img src="/src/assets/images/projects/ptoject-Trybe/Trybewarts/Trybewarts.png" class="card-img-top">
+                        <div class="card-body">
+                            <p class="card-title">PROJETOS <br> TRYBE</p>
+                        </div>
+                    </div></div>
+                    <div class="container-content" id="content-2">
+                        <ul class="list-unstyled" id="project-list-2"></ul>
+                    </div>
+                    <div class="container-item" data-container-id="3"><div class="plusCard2" data-project="3">
+                        <img src="/src/assets/images/projects/freelancer/Freelance-Listech.png" class="card-img-top">
+                        <div class="card-body">
+                            <p class="card-title">PROJETOS <br> FREELANCER</p>
+                        </div>
+                    </div></div>
+                    <div class="container-content" id="content-3">
+                        <ul class="list-unstyled" id="project-list-3"></ul>
+                    </div>
+
+                    <div class="container-item" data-container-id="4"><div class="plusCard2">
+                        <img src="/src/assets/images/totvs/protheus-fluig.png" class="card-img-top">
+                        <div class="card-body">
+                            <p class="card-title">PROTHEUS <br> FLUIG</p>
+                        </div>
+                    </div></div>
+                    <div class="container-content" id="content-4">
+                        <ul class="list-unstyled" id="project-list-4"></ul>
+                    </div>
+                
+                </div>
+            </article>
+        </section>
+
+        
+
+        <br>
+
+    </main>
+
+    <footer>
+
+        <div class="Networking">
+
+            <div class="content-network">
+                <a href="https://www.linkedin.com/in/igor-lisboa-384a2311b/" target="blank"><img
+                        src="/src/assets/images/logo/linkedin.png" width="36%"> Linkedin</a>
+            </div>
+
+            <div class="content-network">
+                <a href="https://github.com/Igor-Lisboa7" target="_blank"><img src="/src/assets/images/logo/github.png"
+                        width="42%"> GitHub</a>
+            </div>
+
+            <div class="content-network">
+                <a href="mailto:igorresendelisboa1@gmail.com" target="_blank"><img src="/src/assets/images/logo/email.png"
+                        width="44%"> Email</a>
+            </div>
+
+        </div>
+ 
+        <p> © Developed and compiled by Igor Lisboa, 2024.</p>
+      
+    </footer>
+
+
+        <!--<script> Padrão -->
+    <script src="../scripts/utils.js"></script>
+        <!--<script> Padrão -->    
+
+        <!-- <script> bootstrap </script> -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js">
+    </script>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous">
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js"
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous">
+    </script>
+        <!-- <script> bootstrap </script> -->
+
+        <!-- <script> jquery </script> -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js">
+    </script>
+        <!-- <script> jquery </script> -->
+
+
+</body>
+
+</html>

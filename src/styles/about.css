@@ -40,6 +40,13 @@
     object-fit: cover;
     cursor: pointer;
     margin-bottom: 30px;
+    overflow: hidden;
+    transition: transform 0.2s;
+}
+
+p img:hover {
+    transform: scale(1.08);
+
 }
 
 .left-circle {
