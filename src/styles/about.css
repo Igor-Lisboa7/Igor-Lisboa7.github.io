@@ -18,14 +18,19 @@
 }
 
 .about-me h1 {
-    font-family: 'Times New Roman', Sans-serif;
+    font-family: 'Cormorant Garamond', serif;
     text-align: center;
-    color: #d0d0d0;
+    color: #b9b8b8;
 }
 
 .about-me p {
-    font-family: 'Verdana', serif;
+    font-family: 'Cormorant Garamond', serif;
     padding: 20px 0;
+    color: #b9b8b8;
+}
+
+#qualificação {
+    font-family: 'Cormorant Garamond', serif;
 }
 
 .about-me img {
@@ -66,6 +71,7 @@ p img:hover {
 }
 
 .container-skill {
+    font-family: 'Cormorant Garamond', serif;
     display: flex;
     justify-content: space-evenly;
     width: 100%;
@@ -80,7 +86,7 @@ p img:hover {
 }
 
 .column h2 {
-    background-color: rgba(2, 192, 235, 0.911);
+    background: linear-gradient(to right,  rgba(2, 192, 235, 0.911), rgba(2, 192, 235, 0.444));
     color: #000000;
     padding: 10px;
     border-radius: 8px;

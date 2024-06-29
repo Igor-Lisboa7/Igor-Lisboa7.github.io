@@ -14,6 +14,11 @@
   overflow: hidden;
 }
 
+.gray {
+  font-family: 'Cormorant Garamond', serif;
+  color: #b9b8b8;
+}
+
 .plus-container {
   width: 85%;
   margin: auto;
@@ -81,7 +86,7 @@ h5 {
   background-color: #222222a7;
   border-radius: 10px;
   box-shadow: 0 1px 2px 2px rgba(3, 225, 250, 0.791);
-  transition: transform 0.2s;
+  transition: transform 0.5s;
  
 }
 
