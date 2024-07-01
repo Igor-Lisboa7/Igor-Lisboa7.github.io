@@ -20,7 +20,8 @@ Este portfólio foi criado para mostrar meus projetos e habilidades em desenvolv
 - HTML5
 - CSS3
 - JavaScript
-- [React](https://reactjs.org/)
+- Bootstrap
+- jQuery
 
 ## Instalação
 
@@ -41,24 +42,32 @@ Depois de clonar o repositório, basta abrir o arquivo index.html no seu navegad
 
 ## Estrutura de Pastas:
 ```bash
-portfolio/
+portfolio/                     │
 ├── index.html
-├── html/
-│   ├── about.html
-│   ├── contact.html
-│   └── projects.html
-├── css/
-│   ├── contact.css
-│   ├── index.css
-│   ├── styles.css
-│   └── reset.css
-├── js/
-│   ├── main.js
-│   └── portfolio.js
-├── images/
-│   ├── logo.png
-│   ├── profile.jpg
-│   └── project1.png
+├──src/    
+│   ├── pages/
+│   │   ├── about.html
+│   │   ├── certificates.html
+│   │   └── projects.html
+│   ├── styles/
+│   │   ├── about.css
+│   │   ├── project.css
+│   │   ├── modal.css
+│   │   ├── certificates.css
+│   │   ├── index.css
+│   │   ├── styles.css
+│   │   └── reset.css
+│   ├── javascript/
+│   │   ├── modalAbout.js
+│   │   ├── modalHome.js
+│   │   └── utils.js
+│   └─── assets/
+│       ├── images/
+│       │   ├── logo.png
+│       │   ├── profile.jpg
+│       │   └── project1.png
+│       └── fontes/
+│           └── https://fonts.google.com/
 └── README.md
 ```
 Essa estrutura ajuda a manter o projeto organizado e facilita a manutenção e expansão do portfólio no futuro.
@@ -67,23 +76,33 @@ Essa estrutura ajuda a manter o projeto organizado e facilita a manutenção e e
 
 index.html: Página principal do portfólio.
 
-html/: Contém arquivos HTML.
-about.html: Página sobre min.
-contact: Contatos.
-projects.html: Página listando seus projetos.
+src/: Diretório principal que contém todas as subpastas do projeto.
 
-css/: Contém arquivos de estilo CSS.
-styles.css: Principal arquivo de estilos.
-reset.css: Arquivo para resetar estilos padrão dos navegadores.
+pages/: Contém arquivos HTML de diferentes páginas do portfólio.
+-about.html: Página sobre mim.
+-certificates.html: Página com certificados e descrição de habilidades.
+-projects.html: Página listando seus projetos.
 
-js/: Contém arquivos JavaScript.
-main.js: Principal arquivo JavaScript.
-portfolio.js: Arquivo para scripts específicos do portfólio.
+styles/: Contém arquivos de estilo CSS.
+-certificates.css: Estilos específicos para a página de certificados.
+-index.css: Estilos específicos para a página principal.
+-styles.css: Arquivo principal de estilos utilizado em várias páginas.
+-reset.css: Arquivo para resetar estilos padrão dos navegadores.
+
+javascript/: Contém arquivos JavaScript.
+-modalAbout.js: Script para funcionalidades do modal na página "Sobre".
+-modalHome.js: Script para funcionalidades do modal na página principal.
+-utils.js: Arquivo utilitário com funções reutilizáveis.
+
+assets/: Contém recursos como imagens e fontes.
+
 images/: Contém imagens utilizadas no portfólio.
+-logo.png: Logo do portfólio.
+-profile.jpg: Foto de perfil.
+-project1.png: Imagem de um projeto específico.
 
-logo.png: Logo do portfólio.
-profile.jpg: Foto de perfil.
-project1.png: Imagem de um projeto específico.
+fontes/: Diretório de fontes (link para Google Fonts).
+-https://fonts.google.com/: Link para o site de fontes do Google.
 
 README.md: Arquivo de documentação do projeto.
 
