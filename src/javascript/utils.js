@@ -1,4 +1,4 @@
-//INICIO CARD VIEW 
+//INICIO CARD VIEW PAGINA PROJETOS
 document.addEventListener('DOMContentLoaded', function () {
 
     const projects = [
@@ -293,4 +293,32 @@ document.addEventListener('DOMContentLoaded', function () {
         }
     });
 });
-// FIM CARD VIEW
+// FIM CARD VIEW PAGINA PROJETOS
+
+//INICIO VIEW - CLASS NONE PAGINA SOBRE
+document.addEventListener('DOMContentLoaded', function() {
+    const titleH2s = document.querySelectorAll('.title-h2 h2');
+
+    titleH2s.forEach(titleH2 => {
+        titleH2.addEventListener('click', function() {
+            const content = this.nextElementSibling;
+
+            // Fecha todas as divs .none que não sejam a clicada
+            document.querySelectorAll('.title-h2 .none').forEach(item => {
+                if (item !== content) {
+                    item.style.display = 'none';
+                }
+            });
+
+            // Alterna a visibilidade da div .none correspondente ao heading clicado
+            if (content.style.display === 'block') {
+                content.style.display = 'none';
+            } else {
+                content.style.display = 'block';
+            }
+        });
+    });
+});
+
+//FINAL VIEW - CLASS NONE PAGINA SOBRE
+

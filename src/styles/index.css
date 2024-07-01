@@ -14,9 +14,15 @@
   overflow: hidden;
 }
 
-.gray {
+.gray-h {
   font-family: 'Cormorant Garamond', serif;
   color: #b9b8b8;
+}
+
+.gray {
+  font-family: 'Cormorant Garamond', serif;
+  color: #c1c1c1;
+  font-size: 19px;
 }
 
 .plus-container {
