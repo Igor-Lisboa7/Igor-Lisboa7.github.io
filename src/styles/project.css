@@ -1,6 +1,7 @@
 .side-center {
   width: 80%;
   margin: auto;
+  font-family: 'Cormorant Garamond', serif;
 }
 
 .title {
@@ -13,16 +14,33 @@
   color: rgb(5, 170, 207);
 }
 
-
-.left {
+.left-h {
   text-align: left;
   width: 90%;
   margin: auto;
+  margin-bottom: .5rem;
+  font-size:24px;
+  margin-bottom: 10px;
+  color: rgb(5, 170, 207);
+}
+.left-p {
+  text-align: left;
+  width: 90%;
+  margin: auto;
+  margin-bottom: .5rem;
+  font-size:18px;
+  margin-bottom: 10px;
+  color: rgb(178, 179, 180)!important; 
 }
 
-.gray {
-  font-family: 'Cormorant Garamond', serif;
-  color: #c8c8c8;
+.left-h6 {
+  text-align: left;
+  width: 90%;
+  margin: auto;
+  margin-bottom: .5rem;
+  font-size:18px;
+  margin-bottom: 10px;
+  color: rgb(255, 255, 255)
 }
 
 .container-content {
@@ -30,6 +48,7 @@
   margin: 50px;
   margin: auto;
   display: none;
+  margin-top: -450px;
 }
 
 .container-item {
@@ -37,6 +56,7 @@
   display: flex;
   justify-content: space-evenly;
   transition: 0.5s;
+  margin-top: 20px;
 }
 
 .container-item:hover {
@@ -64,78 +84,85 @@
 }
 
 .plusCard {
-  width: 300px;
-  height: 460;
-  border: 2px rgba(3, 225, 250, 0.791);
-  background: rgb(0, 0, 0);
-  border-radius: 10px;
-  box-shadow: 0 1px 2px 2px rgba(3, 225, 250, 0.791);
+  width: 70%;
+  grid-template-rows: 210px 250px 20px;
+  background: #1d1d1d;
+  color:white;
+  text-align: justify;
+  box-shadow: 0 10px 15px rgba(0, 0, 0, 0.691);
   transition: transform 0.5s; 
 }
 
 .plusCard:hover{
   transform: scale(1.02);
   cursor: pointer;
-  background: rgb(30, 37, 39);
- 
 }
 
 .card-img-top {
+  width: 100%;
   height: 290px;
   background-color: #222;
   border-top-left-radius: 10px;
   border-top-right-radius: 10px;
+  
 }
 
 .card-body {
+  width: 100%;
   height: auto;
   padding: 10px;
-  border-radius: 5%;
+  margin: auto;
+  margin-bottom: 20px;
 }
 
 .card-title {
   margin-bottom: .5rem;
   font-family: 'Cormorant Garamond', serif;
-  font-weight: 500;
-  line-height: 1.2;
+  font-size:14px;
   font-size: 1.5rem;
   margin-bottom: 10px;
-  color: rgba(4, 176, 215, 0.759);
+  color: rgba(222, 222, 222, 0.962)!important;
+  
 }
 
 .card-text {
   font-family: 'Cormorant Garamond', serif;
-  font-weight: 500;
-  font-size: 1rem;
-  color: rgba(2, 192, 235, 0.911);
+  font-size:14px;
+  color: rgb(197, 197, 197);
 }
 
 
 .list-item {
-  display: flex;
+  display: block;
   width: 98% !important;
-  margin-top: 50px;
+  margin-top: -100px;
+  margin: auto;
+  margin-left: 20px;
+  margin-right: 20px;
 }
 
 .list-unstyled {
-  padding-left: 0;
+  display: flex;
+  padding: 20px;
   list-style: none;
   width: 1889px;
   margin: auto;
 }
 
 .project-item {
-  width: 25% !important;
-  height: 500px;
+  width: 100% !important;
+  height: 450px;
+  padding: 0px;
   cursor: pointer;
   transition: transform 0.2s;
-  margin-left: 20px;
+  margin-left: 180px;
   margin-bottom: 10px;
-  background: rgb(0, 0, 0);
-  border: 1px solid rgb(2, 192, 235);
-  border-radius: 8px;
+  background: #00000050;
+  box-shadow: 0 10px 15px 2px rgba(0, 0, 0, 0.676);
+  border-radius: 5px;
   overflow: hidden;
   text-align: left;
+  
 }
 
 .project-item:hover {
@@ -146,21 +173,35 @@
 .project-item img {
   width: 100% !important;
   height: auto;
+  border-radius: 2px;
+}
+
+.card-body2 {
+  width: 100%;
+  height: auto;
+  padding: 10px;
+  margin: auto;
+  margin-bottom: 20px;
 }
 
 .project-details {
-  display: none;
-  background: #1b404450;
+  position: fixed;
+  top: 60%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: rgba(21, 27, 28, 0.950);
   padding: 10px;
-  border: 1px solid #0496bb;
+  border: 1px solid #238f9e;
   border-radius: 8px;
-  box-shadow: 0 2px 4px 3px rgba(14, 124, 136, 0.553);
-  margin-left: 25px;
-  width: 70% !important;
-  height: 500px;
-  align-self: center;
-  justify-content: space-between;
+  box-shadow: 0 4px 6px 1px rgb(39, 109, 121);
+  width: 100%;
+  max-width: 50%; /* Ajuste conforme necessário */
+  height: 550px; /* Ajuste conforme necessário */
+  backdrop-filter: blur(10px);
+  display: none; /* Mantenha oculto por padrão */
+  z-index: 1000; /* Garante que esteja acima dos outros elementos */
 }
+
 
 .details-wrapper {
   display: flex;
@@ -176,7 +217,7 @@
 }
 
 .details-right {
-  width: 49%;
+  width: 45%;
   height: 479px;
   margin: auto;
 }
@@ -185,6 +226,7 @@
   width: 100%;
   height: 100%;
   overflow: hidden;
+  margin-top: 25px;
 }
 
 .carousel-images {

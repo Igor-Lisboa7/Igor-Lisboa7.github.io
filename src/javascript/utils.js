@@ -4,9 +4,10 @@ document.addEventListener('DOMContentLoaded', function () {
     const projects = [
         {
             id: 0,
-            title: 'Projeto 0',
-            description: 'Uma breve descrição do Projeto 0.',
+            title: 'Jogo da Forca 2.0',
+            description: 'Leia atentamente as regras na "Home Page" e tente acertar os mais de 600 desafios, sendo eles 500 subida de nível e mais de 100 no modo aleatório...',
             details: 'Aqui está uma descrição mais detalhada do Projeto 0...',
+           details2: 'Nos confins do universo, onde as estrelas dançam em galáxias distantes e o tempo se desdobra em dimensões desconhecidas, há um mistério que perdura desde tempos imemoriais. Os sábios dos planetas ancestrais contam histórias de uma civilização antiga, cujas ruínas perdidas são testemunhas silenciosas de um passado glorioso e de uma queda catastrófica. Entre os destroços de templos esquecidos, encontra-se um artefato de poder incomensurável, guardado por guardiões espirituais que há muito transcenderam a matéria física.',
             image: "/src/assets/images/projects/personal-project/Jogo-da-Forca/hangman-game.png"
         },
         {
@@ -14,6 +15,7 @@ document.addEventListener('DOMContentLoaded', function () {
             title: 'Projeto 1',
             description: 'Uma breve descrição do Projeto 1.',
             details: 'Aqui está uma descrição mais detalhada do Projeto 1...',
+            details2: 'Nos confins do universo, onde as estrelas dançam em galáxias distantes e o tempo se desdobra em dimensões desconhecidas, há um mistério que perdura desde tempos imemoriais. Os sábios dos planetas ancestrais contam histórias de uma civilização antiga, cujas ruínas perdidas são testemunhas silenciosas de um passado glorioso e de uma queda catastrófica. Entre os destroços de templos esquecidos, encontra-se um artefato de poder incomensurável, guardado por guardiões espirituais que há muito transcenderam a matéria física.',
             image: "/src/assets/images/projects/personal-project/Jogo-da-Forca/death.png"
         },
         {
@@ -21,6 +23,7 @@ document.addEventListener('DOMContentLoaded', function () {
             title: 'Projeto 2',
             description: 'Uma breve descrição do Projeto 2.',
             details: 'Aqui está uma descrição mais detalhada do Projeto 2...',
+            details2: 'Nos confins do universo, onde as estrelas dançam em galáxias distantes e o tempo se desdobra em dimensões desconhecidas, há um mistério que perdura desde tempos imemoriais. Os sábios dos planetas ancestrais contam histórias de uma civilização antiga, cujas ruínas perdidas são testemunhas silenciosas de um passado glorioso e de uma queda catastrófica. Entre os destroços de templos esquecidos, encontra-se um artefato de poder incomensurável, guardado por guardiões espirituais que há muito transcenderam a matéria física.',
             image: "/src/assets/images/projects/personal-project/Jogo-da-Forca/hangman-game.png"
         },
         {
@@ -28,6 +31,7 @@ document.addEventListener('DOMContentLoaded', function () {
             title: 'Projeto 3',
             description: 'Uma breve descrição do Projeto 3.',
             details: 'Aqui está uma descrição mais detalhada do Projeto 3...',
+            details2: 'Nos confins do universo, onde as estrelas dançam em galáxias distantes e o tempo se desdobra em dimensões desconhecidas, há um mistério que perdura desde tempos imemoriais. Os sábios dos planetas ancestrais contam histórias de uma civilização antiga, cujas ruínas perdidas são testemunhas silenciosas de um passado glorioso e de uma queda catastrófica. Entre os destroços de templos esquecidos, encontra-se um artefato de poder incomensurável, guardado por guardiões espirituais que há muito transcenderam a matéria física.',
             image: "/src/assets/images/projects/personal-project/Jogo-da-Forca/hangman-game4.png"
         },
         {
@@ -35,6 +39,7 @@ document.addEventListener('DOMContentLoaded', function () {
             title: 'Projeto 4',
             description: 'Uma breve descrição do Projeto 4.',
             details: 'Aqui está uma descrição mais detalhada do Projeto 4...',
+            details2: 'Nos confins do universo, onde as estrelas dançam em galáxias distantes e o tempo se desdobra em dimensões desconhecidas, há um mistério que perdura desde tempos imemoriais. Os sábios dos planetas ancestrais contam histórias de uma civilização antiga, cujas ruínas perdidas são testemunhas silenciosas de um passado glorioso e de uma queda catastrófica. Entre os destroços de templos esquecidos, encontra-se um artefato de poder incomensurável, guardado por guardiões espirituais que há muito transcenderam a matéria física.',
             image: "/src/assets/images/projects/personal-project/Jogo-da-Forca/hangman-game5.png"
         },
         {
@@ -42,6 +47,7 @@ document.addEventListener('DOMContentLoaded', function () {
             title: 'Projeto 5',
             description: 'Uma breve descrição do Projeto 5.',
             details: 'Aqui está uma descrição mais detalhada do Projeto 5...',
+            details2: 'Nos confins do universo, onde as estrelas dançam em galáxias distantes e o tempo se desdobra em dimensões desconhecidas, há um mistério que perdura desde tempos imemoriais. Os sábios dos planetas ancestrais contam histórias de uma civilização antiga, cujas ruínas perdidas são testemunhas silenciosas de um passado glorioso e de uma queda catastrófica. Entre os destroços de templos esquecidos, encontra-se um artefato de poder incomensurável, guardado por guardiões espirituais que há muito transcenderam a matéria física.',
             image: "/src/assets/images/projects/ptoject-Trybe/Trybewarts/Trybewarts.png"
         },
         {
@@ -49,6 +55,7 @@ document.addEventListener('DOMContentLoaded', function () {
             title: 'Projeto 6',
             description: 'Uma breve descrição do Projeto 6.',
             details: 'Aqui está uma descrição mais detalhada do Projeto 6...',
+            details2: 'Nos confins do universo, onde as estrelas dançam em galáxias distantes e o tempo se desdobra em dimensões desconhecidas, há um mistério que perdura desde tempos imemoriais. Os sábios dos planetas ancestrais contam histórias de uma civilização antiga, cujas ruínas perdidas são testemunhas silenciosas de um passado glorioso e de uma queda catastrófica. Entre os destroços de templos esquecidos, encontra-se um artefato de poder incomensurável, guardado por guardiões espirituais que há muito transcenderam a matéria física.',
             image: "/src/assets/images/projects/ptoject-Trybe/TrybeTunes/TrybeTunes.png"
         },
         {
@@ -56,6 +63,7 @@ document.addEventListener('DOMContentLoaded', function () {
             title: 'Projeto 7',
             description: 'Uma breve descrição do Projeto 7.',
             details: 'Aqui está uma descrição mais detalhada do Projeto 7...',
+            details2: 'Nos confins do universo, onde as estrelas dançam em galáxias distantes e o tempo se desdobra em dimensões desconhecidas, há um mistério que perdura desde tempos imemoriais. Os sábios dos planetas ancestrais contam histórias de uma civilização antiga, cujas ruínas perdidas são testemunhas silenciosas de um passado glorioso e de uma queda catastrófica. Entre os destroços de templos esquecidos, encontra-se um artefato de poder incomensurável, guardado por guardiões espirituais que há muito transcenderam a matéria física.',
             image: "/src/assets/images/projects/ptoject-Trybe/Gerador-de-senha/Gerenciador-de-senha.png"
         },
         {
@@ -63,6 +71,7 @@ document.addEventListener('DOMContentLoaded', function () {
             title: 'Projeto 8',
             description: 'Uma breve descrição do Projeto 8.',
             details: 'Aqui está uma descrição mais detalhada do Projeto 8...',
+            details2: 'Nos confins do universo, onde as estrelas dançam em galáxias distantes e o tempo se desdobra em dimensões desconhecidas, há um mistério que perdura desde tempos imemoriais. Os sábios dos planetas ancestrais contam histórias de uma civilização antiga, cujas ruínas perdidas são testemunhas silenciosas de um passado glorioso e de uma queda catastrófica. Entre os destroços de templos esquecidos, encontra-se um artefato de poder incomensurável, guardado por guardiões espirituais que há muito transcenderam a matéria física.',
             image: "/src/assets/images/projects/ptoject-Trybe/Trybewarts/Trybewarts.png"
         },
         {
@@ -70,6 +79,7 @@ document.addEventListener('DOMContentLoaded', function () {
             title: 'Projeto 9',
             description: 'Uma breve descrição do Projeto 9.',
             details: 'Aqui está uma descrição mais detalhada do Projeto 9...',
+            details2: 'Nos confins do universo, onde as estrelas dançam em galáxias distantes e o tempo se desdobra em dimensões desconhecidas, há um mistério que perdura desde tempos imemoriais. Os sábios dos planetas ancestrais contam histórias de uma civilização antiga, cujas ruínas perdidas são testemunhas silenciosas de um passado glorioso e de uma queda catastrófica. Entre os destroços de templos esquecidos, encontra-se um artefato de poder incomensurável, guardado por guardiões espirituais que há muito transcenderam a matéria física.',
             image: "/src/assets/images/projects/ptoject-Trybe/Trybewarts/Trybewarts.png"
         },
         {
@@ -77,6 +87,7 @@ document.addEventListener('DOMContentLoaded', function () {
             title: 'Projeto 10',
             description: 'Uma breve descrição do Projeto 10.',
             details: 'Aqui está uma descrição mais detalhada do Projeto 10...',
+            details2: 'Nos confins do universo, onde as estrelas dançam em galáxias distantes e o tempo se desdobra em dimensões desconhecidas, há um mistério que perdura desde tempos imemoriais. Os sábios dos planetas ancestrais contam histórias de uma civilização antiga, cujas ruínas perdidas são testemunhas silenciosas de um passado glorioso e de uma queda catastrófica. Entre os destroços de templos esquecidos, encontra-se um artefato de poder incomensurável, guardado por guardiões espirituais que há muito transcenderam a matéria física.',
             image: "/src/assets/images/projects/freelancer/Freelance-Listech.png"
         },
         {
@@ -84,6 +95,7 @@ document.addEventListener('DOMContentLoaded', function () {
             title: 'Projeto 11',
             description: 'Uma breve descrição do Projeto 11.',
             details: 'Aqui está uma descrição mais detalhada do Projeto 11...',
+            details2: 'Nos confins do universo, onde as estrelas dançam em galáxias distantes e o tempo se desdobra em dimensões desconhecidas, há um mistério que perdura desde tempos imemoriais. Os sábios dos planetas ancestrais contam histórias de uma civilização antiga, cujas ruínas perdidas são testemunhas silenciosas de um passado glorioso e de uma queda catastrófica. Entre os destroços de templos esquecidos, encontra-se um artefato de poder incomensurável, guardado por guardiões espirituais que há muito transcenderam a matéria física.',
             image: "/src/assets/images/projects/ptoject-Trybe/TrybeTunes/TrybeTunes.png"
         },
         {
@@ -91,6 +103,7 @@ document.addEventListener('DOMContentLoaded', function () {
             title: 'Projeto 12',
             description: 'Uma breve descrição do Projeto 12.',
             details: 'Aqui está uma descrição mais detalhada do Projeto 12...',
+            details2: 'Nos confins do universo, onde as estrelas dançam em galáxias distantes e o tempo se desdobra em dimensões desconhecidas, há um mistério que perdura desde tempos imemoriais. Os sábios dos planetas ancestrais contam histórias de uma civilização antiga, cujas ruínas perdidas são testemunhas silenciosas de um passado glorioso e de uma queda catastrófica. Entre os destroços de templos esquecidos, encontra-se um artefato de poder incomensurável, guardado por guardiões espirituais que há muito transcenderam a matéria física.',
             image: "/src/assets/images/projects/ptoject-Trybe/TrybeTunes/TrybeTunes.png"
         },
         {
@@ -98,6 +111,7 @@ document.addEventListener('DOMContentLoaded', function () {
             title: 'Projeto 13',
             description: 'Uma breve descrição do Projeto 13.',
             details: 'Aqui está uma descrição mais detalhada do Projeto 13...',
+            details2: 'Nos confins do universo, onde as estrelas dançam em galáxias distantes e o tempo se desdobra em dimensões desconhecidas, há um mistério que perdura desde tempos imemoriais. Os sábios dos planetas ancestrais contam histórias de uma civilização antiga, cujas ruínas perdidas são testemunhas silenciosas de um passado glorioso e de uma queda catastrófica. Entre os destroços de templos esquecidos, encontra-se um artefato de poder incomensurável, guardado por guardiões espirituais que há muito transcenderam a matéria física.',
             image: "/src/assets/images/totvs/protheus/Protheus.png"
         },
         {
@@ -105,6 +119,7 @@ document.addEventListener('DOMContentLoaded', function () {
             title: 'Projeto 14',
             description: 'Uma breve descrição do Projeto 14.',
             details: 'Aqui está uma descrição mais detalhada do Projeto 14...',
+            details2: 'Nos confins do universo, onde as estrelas dançam em galáxias distantes e o tempo se desdobra em dimensões desconhecidas, há um mistério que perdura desde tempos imemoriais. Os sábios dos planetas ancestrais contam histórias de uma civilização antiga, cujas ruínas perdidas são testemunhas silenciosas de um passado glorioso e de uma queda catastrófica. Entre os destroços de templos esquecidos, encontra-se um artefato de poder incomensurável, guardado por guardiões espirituais que há muito transcenderam a matéria física.',
             image: "/src/assets/images/totvs/fluig/fluig.png"
         },
         {
@@ -112,6 +127,7 @@ document.addEventListener('DOMContentLoaded', function () {
             title: 'Projeto 15',
             description: 'Uma breve descrição do Projeto 15.',
             details: 'Aqui está uma descrição mais detalhada do Projeto 15...',
+            details2: 'Nos confins do universo, onde as estrelas dançam em galáxias distantes e o tempo se desdobra em dimensões desconhecidas, há um mistério que perdura desde tempos imemoriais. Os sábios dos planetas ancestrais contam histórias de uma civilização antiga, cujas ruínas perdidas são testemunhas silenciosas de um passado glorioso e de uma queda catastrófica. Entre os destroços de templos esquecidos, encontra-se um artefato de poder incomensurável, guardado por guardiões espirituais que há muito transcenderam a matéria física.',
             image: "/src/assets/images/totvs/protheus-fluig.png"
         },
         {
@@ -119,9 +135,11 @@ document.addEventListener('DOMContentLoaded', function () {
             title: 'Projeto 16',
             description: 'Uma breve descrição do Projeto 16.',
             details: 'Aqui está uma descrição mais detalhada do Projeto 16...',
+            details2: 'Nos confins do universo, onde as estrelas dançam em galáxias distantes e o tempo se desdobra em dimensões desconhecidas, há um mistério que perdura desde tempos imemoriais. Os sábios dos planetas ancestrais contam histórias de uma civilização antiga, cujas ruínas perdidas são testemunhas silenciosas de um passado glorioso e de uma queda catastrófica. Entre os destroços de templos esquecidos, encontra-se um artefato de poder incomensurável, guardado por guardiões espirituais que há muito transcenderam a matéria física.',
             image: "/src/assets/images/totvs/protheus-fluig.png"
         }
     ];
+
     const projectImages = [
         {
             projectId: 0,
@@ -166,11 +184,12 @@ document.addEventListener('DOMContentLoaded', function () {
 
         // Cria um elemento div para o cartão do projeto e define seu conteúdo HTML
         let card = document.createElement('div');
+
         card.classList.add('project-item');
         card.dataset.projectId = project.id;
         card.innerHTML = `
             <img src="${project.image}" class="card-img-top">
-            <div class="card-body">
+            <div class="card-body2">
                 <h5 class="card-title">${project.title}</h5>
                 <p class="card-text">${project.description}</p>
             </div>
@@ -183,7 +202,7 @@ document.addEventListener('DOMContentLoaded', function () {
         <div class="details-wrapper">
             <div class="details-left">
                 <h5>${project.title}</h5>
-                <p>${project.details}</p>
+                <p>${project.details2}</p>
             </div>
             <div class="details-right">
                 <div id="carousel-${project.id}" class="carousel">
@@ -191,6 +210,9 @@ document.addEventListener('DOMContentLoaded', function () {
                     <div class="carousel-images"></div>
                     <button class="next">❯</button>
                 </div>
+            </div>
+            <div class="details-button">
+            <button class="button">X</button>
             </div>
         </div>
     `;
@@ -223,6 +245,7 @@ document.addEventListener('DOMContentLoaded', function () {
         } else {
             projectList4.appendChild(listItem);
         }
+
 
         // Adiciona um evento de clique ao cartão para mostrar/ocultar os detalhes do projeto
         card.addEventListener('click', function () {
@@ -268,8 +291,27 @@ document.addEventListener('DOMContentLoaded', function () {
                 container0.style.display = 'block';
             }
 
-            
+
         });
+
+        // Adiciona um evento de clique no documento para fechar os detalhes do projeto ao clicar fora deles
+        document.addEventListener('click', function (e) {
+            if (!e.target.closest('.project-item') && !e.target.closest('.project-details')) {
+                document.querySelectorAll('.project-details').forEach(detail => {
+                    detail.style.display = 'none';
+                });
+            }
+        });
+
+        document.addEventListener('click', function (e) {
+            if (e.target.classList.contains('button')) {
+                const details = e.target.closest('.project-details');
+                if (details) {
+                    details.style.display = 'none';
+                }
+            }
+        });
+
     });
 
     // Adiciona um evento de clique ao documento para manipular o carrossel de imagens
@@ -279,7 +321,6 @@ document.addEventListener('DOMContentLoaded', function () {
             const imagesDiv = carousel.querySelector('.carousel-images');
             const images = Array.from(imagesDiv.children);
             const activeIndex = images.findIndex(img => img.classList.contains('active'));
-
             images[activeIndex].classList.remove('active');
 
             let newIndex;
@@ -296,11 +337,11 @@ document.addEventListener('DOMContentLoaded', function () {
 // FIM CARD VIEW PAGINA PROJETOS
 
 //INICIO VIEW - CLASS NONE PAGINA SOBRE
-document.addEventListener('DOMContentLoaded', function() {
+document.addEventListener('DOMContentLoaded', function () {
     const titleH2s = document.querySelectorAll('.title-h2 h2');
 
     titleH2s.forEach(titleH2 => {
-        titleH2.addEventListener('click', function() {
+        titleH2.addEventListener('click', function () {
             const content = this.nextElementSibling;
 
             // Fecha todas as divs .none que não sejam a clicada
