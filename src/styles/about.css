@@ -125,6 +125,10 @@ h2:hover {
     border: 2px solid rgba(2, 192, 235, 0.721);
     border-radius: 8px;
 }
+.column p{
+    display: block;
+    text-align: center;
+}
 
 ul{
     padding-top: 20px;
