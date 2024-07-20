@@ -7,7 +7,7 @@ document.addEventListener('DOMContentLoaded', function () {
             title: 'Jogo da Forca 2.0',
             description: 'Leia atentamente as regras na "Home Page" e tente acertar os mais de 600 desafios, sendo eles 500 subida de nível e mais de 100 no modo aleatório...',
             details: 'Aqui está uma descrição mais detalhada do Projeto 0...',
-           details2: 'Nos confins do universo, onde as estrelas dançam em galáxias distantes e o tempo se desdobra em dimensões desconhecidas, há um mistério que perdura desde tempos imemoriais. Os sábios dos planetas ancestrais contam histórias de uma civilização antiga, cujas ruínas perdidas são testemunhas silenciosas de um passado glorioso e de uma queda catastrófica. Entre os destroços de templos esquecidos, encontra-se um artefato de poder incomensurável, guardado por guardiões espirituais que há muito transcenderam a matéria física.',
+            details2: 'Nos confins do universo, onde as estrelas dançam em galáxias distantes e o tempo se desdobra em dimensões desconhecidas, há um mistério que perdura desde tempos imemoriais. Os sábios dos planetas ancestrais contam histórias de uma civilização antiga, cujas ruínas perdidas são testemunhas silenciosas de um passado glorioso e de uma queda catastrófica. Entre os destroços de templos esquecidos, encontra-se um artefato de poder incomensurável, guardado por guardiões espirituais que há muito transcenderam a matéria física.',
             image: "/src/assets/images/projects/personal-project/Jogo-da-Forca/hangman-game.png"
         },
         {
@@ -137,6 +137,38 @@ document.addEventListener('DOMContentLoaded', function () {
             details: 'Aqui está uma descrição mais detalhada do Projeto 16...',
             details2: 'Nos confins do universo, onde as estrelas dançam em galáxias distantes e o tempo se desdobra em dimensões desconhecidas, há um mistério que perdura desde tempos imemoriais. Os sábios dos planetas ancestrais contam histórias de uma civilização antiga, cujas ruínas perdidas são testemunhas silenciosas de um passado glorioso e de uma queda catastrófica. Entre os destroços de templos esquecidos, encontra-se um artefato de poder incomensurável, guardado por guardiões espirituais que há muito transcenderam a matéria física.',
             image: "/src/assets/images/totvs/protheus-fluig.png"
+        },
+        {
+            id: 17,
+            title: 'Projeto 16',
+            description: 'Uma breve descrição do Projeto 16.',
+            details: 'Aqui está uma descrição mais detalhada do Projeto 16...',
+            details2: 'Nos confins do universo, onde as estrelas dançam em galáxias distantes e o tempo se desdobra em dimensões desconhecidas, há um mistério que perdura desde tempos imemoriais. Os sábios dos planetas ancestrais contam histórias de uma civilização antiga, cujas ruínas perdidas são testemunhas silenciosas de um passado glorioso e de uma queda catastrófica. Entre os destroços de templos esquecidos, encontra-se um artefato de poder incomensurável, guardado por guardiões espirituais que há muito transcenderam a matéria física.',
+            image: "/src/assets/images/totvs/protheus-fluig.png"
+        },
+        {
+            id: 18,
+            title: 'Projeto 16',
+            description: 'Uma breve descrição do Projeto 16.',
+            details: 'Aqui está uma descrição mais detalhada do Projeto 16...',
+            details2: 'Nos confins do universo, onde as estrelas dançam em galáxias distantes e o tempo se desdobra em dimensões desconhecidas, há um mistério que perdura desde tempos imemoriais. Os sábios dos planetas ancestrais contam histórias de uma civilização antiga, cujas ruínas perdidas são testemunhas silenciosas de um passado glorioso e de uma queda catastrófica. Entre os destroços de templos esquecidos, encontra-se um artefato de poder incomensurável, guardado por guardiões espirituais que há muito transcenderam a matéria física.',
+            image: "/src/assets/images/totvs/protheus-fluig.png"
+        },
+        {
+            id: 19,
+            title: 'Projeto 16',
+            description: 'Uma breve descrição do Projeto 16.',
+            details: 'Aqui está uma descrição mais detalhada do Projeto 16...',
+            details2: 'Nos confins do universo, onde as estrelas dançam em galáxias distantes e o tempo se desdobra em dimensões desconhecidas, há um mistério que perdura desde tempos imemoriais. Os sábios dos planetas ancestrais contam histórias de uma civilização antiga, cujas ruínas perdidas são testemunhas silenciosas de um passado glorioso e de uma queda catastrófica. Entre os destroços de templos esquecidos, encontra-se um artefato de poder incomensurável, guardado por guardiões espirituais que há muito transcenderam a matéria física.',
+            image: "/src/assets/images/totvs/protheus-fluig.png"
+        },
+        {
+            id: 20,
+            title: 'Projeto 16',
+            description: 'Uma breve descrição do Projeto 16.',
+            details: 'Aqui está uma descrição mais detalhada do Projeto 16...',
+            details2: 'Nos confins do universo, onde as estrelas dançam em galáxias distantes e o tempo se desdobra em dimensões desconhecidas, há um mistério que perdura desde tempos imemoriais. Os sábios dos planetas ancestrais contam histórias de uma civilização antiga, cujas ruínas perdidas são testemunhas silenciosas de um passado glorioso e de uma queda catastrófica. Entre os destroços de templos esquecidos, encontra-se um artefato de poder incomensurável, guardado por guardiões espirituais que há muito transcenderam a matéria física.',
+            image: "/src/assets/images/totvs/protheus-fluig.png"
         }
     ];
 
@@ -167,6 +199,7 @@ document.addEventListener('DOMContentLoaded', function () {
         },
         // ... outras imagens de projetos
     ];
+
     const projectList1 = document.getElementById('project-list-1');
     const projectList2 = document.getElementById('project-list-2');
     const projectList3 = document.getElementById('project-list-3');
@@ -181,6 +214,7 @@ document.addEventListener('DOMContentLoaded', function () {
         // Cria um elemento de lista para o projeto
         let listItem = document.createElement('li');
         listItem.classList.add('list-item');
+        listItem.classList.add('current-item');
 
         // Cria um elemento div para o cartão do projeto e define seu conteúdo HTML
         let card = document.createElement('div');
@@ -240,7 +274,7 @@ document.addEventListener('DOMContentLoaded', function () {
             projectList1.appendChild(listItem);
         } else if (index < 10) {
             projectList2.appendChild(listItem);
-        } else if (index < 13) {
+        } else if (index < 15) {
             projectList3.appendChild(listItem);
         } else {
             projectList4.appendChild(listItem);
@@ -333,6 +367,47 @@ document.addEventListener('DOMContentLoaded', function () {
             images[newIndex].classList.add('active');
         }
     });
+
+    document.querySelectorAll('.container-item').forEach(card => {
+        card.addEventListener('click', function () {
+            card.scrollIntoView({ behavior: 'smooth' });
+        });
+    });
+    
+    document.querySelectorAll('.container-content').forEach(container => {
+        let currentItem = 0;
+
+        const list = container.querySelector('.list-item');
+        const items = list.querySelectorAll('.projetc-item');
+        const maxItems = items.length;
+
+        const updateScroll = (isLeft) => {
+            if (isLeft) {
+                currentItem -= 1;
+            } else {
+                currentItem += 1;
+            }
+
+            if (currentItem >= maxItems) {
+                currentItem = 0;
+            }
+
+            if (currentItem < 0) {
+                currentItem = maxItems - 1;
+            }
+
+            list.style.transform = `translateX(-${currentItem * 100}%)`;
+        };
+
+        container.querySelector('.arrow-left').addEventListener('click', () => {
+            updateScroll(true);
+        });
+
+        container.querySelector('.arrow-right').addEventListener('click', () => {
+            updateScroll(false);
+        });
+    });
+
 });
 // FIM CARD VIEW PAGINA PROJETOS
 
