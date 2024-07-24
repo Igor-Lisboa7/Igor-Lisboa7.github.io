@@ -214,7 +214,6 @@ document.addEventListener('DOMContentLoaded', function () {
         // Cria um elemento de lista para o projeto
         let listItem = document.createElement('li');
         listItem.classList.add('list-item');
-        listItem.classList.add('current-item');
 
         // Cria um elemento div para o cartão do projeto e define seu conteúdo HTML
         let card = document.createElement('div');
@@ -368,45 +367,13 @@ document.addEventListener('DOMContentLoaded', function () {
         }
     });
 
+    //***************Rolar até o card clicado******************
     document.querySelectorAll('.container-item').forEach(card => {
         card.addEventListener('click', function () {
             card.scrollIntoView({ behavior: 'smooth' });
         });
     });
-    
-    document.querySelectorAll('.container-content').forEach(container => {
-        let currentItem = 0;
-
-        const list = container.querySelector('.list-item');
-        const items = list.querySelectorAll('.projetc-item');
-        const maxItems = items.length;
-
-        const updateScroll = (isLeft) => {
-            if (isLeft) {
-                currentItem -= 1;
-            } else {
-                currentItem += 1;
-            }
-
-            if (currentItem >= maxItems) {
-                currentItem = 0;
-            }
-
-            if (currentItem < 0) {
-                currentItem = maxItems - 1;
-            }
-
-            list.style.transform = `translateX(-${currentItem * 100}%)`;
-        };
-
-        container.querySelector('.arrow-left').addEventListener('click', () => {
-            updateScroll(true);
-        });
-
-        container.querySelector('.arrow-right').addEventListener('click', () => {
-            updateScroll(false);
-        });
-    });
+    //***************Rolar até o card clicado******************
 
 });
 // FIM CARD VIEW PAGINA PROJETOS
