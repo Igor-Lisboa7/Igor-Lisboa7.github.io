@@ -245,7 +245,7 @@ document.addEventListener('DOMContentLoaded', function () {
                 </div>
             </div>
             <div class="details-button">
-            <button class="button">X</button>
+            <span class="close">×</span>
             </div>
         </div>
     `;
@@ -337,7 +337,7 @@ document.addEventListener('DOMContentLoaded', function () {
         });
 
         document.addEventListener('click', function (e) {
-            if (e.target.classList.contains('button')) {
+            if (e.target.classList.contains('close')) {
                 const details = e.target.closest('.project-details');
                 if (details) {
                     details.style.display = 'none';

@@ -1,14 +1,23 @@
 // Inicio array para Modal
+const certificado =  "Totvs Fluig Dev Start";
 const plusCards = [
     {
         id: 1,
         title: "CERTIFICADOS",
         description: "Descrição detalhada do projeto 2.",
         images: [
-            { src: "./images/certificate/Front-end.png", desc: "Certificado Front-End" },
-            { src: "./images/certificate/Back-end.png", desc: "Certificado Back-End" },
-            { src: "./images/certificate/Computer-Science.png", desc: "Certificado Computer Science" },
-            { src: "./images/certificate/Totvs-Certificate-Fluig.png", desc: "Certificado Totvs Fluig Dev Start" }
+            {
+                src: "/src/assets/images/certificate/Front-end.png", desc: "Certificado Front-End"
+            },
+            {
+                src: "/src/assets/images/certificate/Back-end.png", desc: "Certificado Back-End"
+            },
+            {
+                src: "/src/assets/images/certificate/Computer-Science.png", desc: "Certificado Computer Science"
+            },
+            {
+                src: "/src/assets/images/certificate/Totvs-Certificate-Fluig.png", desc: "Certificado Totvs Fluig Dev Start"
+            }
         ]
     },
     {
@@ -16,9 +25,15 @@ const plusCards = [
         title: "PROJETOS TRYBE",
         description: "Projetos feitos na Trybe usados como 'prova' onde cada requisito contava pontos.",
         images: [
-            { src: "./images/ptoject-Trybe/Trybewarts/Trybewarts.png", desc: "Projeto Trybewarts" },
-            { src: "./images/ptoject-Trybe/Gerador-de-senha/Gerenciador-de-senha.png", desc: "Projeto Gerenciador de Senhas" },
-            { src: "./images/ptoject-Trybe/TrybeTunes/TrybeTunes.png", desc: "Projeto TrybeTunes" }
+            {
+                src: "/src/assets/images/projects/ptoject-Trybe/Trybewarts/Trybewarts.png", desc: "Projeto Trybewarts"
+            },
+            {
+                src: "/src/assets/images/projects/ptoject-Trybe/Gerador-de-senha/Gerenciador-de-senha.png", desc: "Projeto Gerenciador de Senhas"
+            },
+            {
+                src: "/src/assets/images/projects/ptoject-Trybe/TrybeTunes/TrybeTunes.png", desc: "Projeto TrybeTunes"
+            }
         ]
     },
     {
@@ -26,8 +41,13 @@ const plusCards = [
         title: "PROJETOS PESSOAIS",
         description: "Descrição detalhada do projeto 2.",
         images: [
-            { src: "../images/Project/Jogo-da-Forca/hangman-game.png" },
-            { src: "../images/Project/Jogo-da-Forca/death.png", desc: "Jogo da Forca 2.0" }
+            { 
+                src: "/src/assets/images/projects/personal-project/Jogo-da-Forca/hangman-game.png" 
+            },
+            { 
+                src: "/src/assets/images/projects/personal-project/Jogo-da-Forca/death.png", 
+                desc: "Jogo da Forca 2.0" 
+            }
         ]
     },
     {
@@ -35,7 +55,9 @@ const plusCards = [
         title: "FREELANCER",
         description: "Descrição detalhada do projeto 2.",
         images: [
-            { src: "./images/freelancer/Freelance-Listech.png", desc: "Projeto Freelancer Listech Informática." }
+            {
+                src: "/src/assets/images/projects/freelancer/Freelance-Listech.png", desc: "Projeto Freelancer Listech Informática."
+            }
         ]
     },
     {
@@ -43,7 +65,7 @@ const plusCards = [
         title: "PROTHEUS",
         description: "Descrição detalhada do projeto 2.",
         images: [
-            { src: "../images/protheus/Protheus.png", desc: "ERP Protheus" }
+            { src: "/src/assets/images/totvs/protheus/Protheus.png", desc: "ERP Protheus" }
         ]
     }
 

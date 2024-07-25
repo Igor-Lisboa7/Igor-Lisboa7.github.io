@@ -289,6 +289,19 @@
 .next {
   right: 0;
 }
+.close {
+  color: #aaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: #fff;
+  text-decoration: none;
+  cursor: pointer;
+}
 
 /* Works on Firefox */
 * {

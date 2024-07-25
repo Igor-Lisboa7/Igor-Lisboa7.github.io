@@ -6,6 +6,13 @@
   line-height: 0;
   overflow: hidden;
   vertical-align: middle;
+  transition: transform 0.5s;
+}
+
+.side-center img:hover {
+  cursor: pointer;
+  transform: scale(1.02);
+
 }
 
 .description {
