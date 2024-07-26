@@ -13,7 +13,7 @@
   line-height: 1.2;
   font-size: 2rem;
   margin-bottom: 10px;
-  color: rgb(5, 170, 207);
+  color: rgb(182, 182, 182);
 }
 
 .left-h {
@@ -288,6 +288,19 @@
 
 .next {
   right: 0;
+}
+.close {
+  color: #aaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: #fff;
+  text-decoration: none;
+  cursor: pointer;
 }
 
 /* Works on Firefox */
