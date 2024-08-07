@@ -13,9 +13,12 @@ body {
 
 }
 
+
+
 #custom-header  {
   position: fixed;
   width: 100%;
+  box-shadow: 0 10px 15px 2px rgba(33, 33, 33, 0.925);
   z-index: 1000; /* Alto valor para garantir que fique acima de outros elementos */
 }
 
@@ -59,7 +62,7 @@ footer {
   width: 100%;
   height: 75px;
   justify-content: space-around;
-  background: #444;
+  background: #323232;
   color: #888888;
   text-align: center;
   align-items: center;
@@ -176,7 +179,7 @@ button:hover {
     width: 100%;
     height: 130px;
     justify-content: space-around;
-    background: #444;
+    background: #393939;
     color: #888888;
     text-align: center;
     align-items: center;
