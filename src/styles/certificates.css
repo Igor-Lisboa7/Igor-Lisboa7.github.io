@@ -8,6 +8,11 @@
     font-family: 'Cormorant Garamond', serif;
     z-index: 8000;
   }
+
+  .width-title {
+    width: 70%;
+    margin: auto;
+  }
   
   .title {
     margin-bottom: .5rem;
@@ -67,14 +72,17 @@
   }
 
 .cardline {
-    width: 98%;
+    width: 50%;
     display: flex;
-    justify-content: space-evenly;
+    gap:100px;
+    margin: auto;
+    margin-top: 50px;
 }
 
 .cardpoint .card-check {
     grid-template-rows: 210px 250px 20px;
     background: #1d1d1d;
+    border-radius:6px;
     box-shadow: 0 10px 15px rgba(0, 0, 0, 0.691);
     transition: transform 0.5s; 
     padding: 1em;
@@ -92,6 +100,7 @@
 .cardpoint .card-check:hover{
     transform: scale(1.03);
     cursor: pointer;
+    background: #1f1f1f;
 }
 .cardpoint .card-check h3 {
     font-size: 20px;
@@ -118,17 +127,19 @@
 }
 
  h2 {
-    background: linear-gradient(to right,  rgba(2, 192, 235, 0.850), rgba(2, 192, 235, 0.444));
+    background: linear-gradient(to right,  rgba(61, 62, 62, 0.85), rgba(43, 43, 43, 0.444));
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.691);
     color: #000000;
     padding: 10px;
     border-radius: 8px;
     width: 580px;
     text-align: center;
     transition: transform 0.5s;
+    margin-bottom: 20px;
 }
 
 h2:hover {
-    background: linear-gradient(to right,  rgba(2, 192, 235, 0.950), rgba(2, 192, 235, 0.600));
+    background: linear-gradient(to right,  rgba(84, 85, 85, 0.85), rgba(61, 61, 61, 0.444));
     color: #000000;
     padding: 10px;
     border-radius: 8px;
@@ -140,13 +151,13 @@ h2:hover {
 
 .none {
     display: none;
-    background: linear-gradient(to right,   rgba(2, 192, 235, 0.911), rgba(2, 192, 235, 0.444));
-    color: #000000;
+    background: linear-gradient(to right,   rgba(37, 37, 37, 0.85), rgba(22, 22, 22, 0.444));
+    color: #c7c7c7;
     border-radius: 8px;
     width: 580px;
     text-align: center;
-    border: none !important;
     margin-bottom: 10px;
+    border: 2px solid rgba(255, 255, 255, 0.045); 
 }
 .none p {
     padding: 4px;
@@ -155,9 +166,10 @@ h2:hover {
 
 .column {
     display: flex;
-    border: 2px solid rgba(2, 192, 235, 0.721);
+    background: linear-gradient(to right,   rgba(46, 45, 45, 0.85), rgba(22, 22, 22, 0.444));
+    color: #000000;
+    box-shadow: 0 10px 15px rgba(0, 0, 0, 0.691);
     border-radius: 8px;
-    background-color: #000000;
     text-align: left;
 }
 .column p{
