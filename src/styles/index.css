@@ -43,7 +43,6 @@
   text-align: center;
   font-family: 'Cormorant Garamond', serif;
   margin-top: 35px;
-  display: flex;
   justify-content: space-around;
   align-items: center;
   
@@ -124,9 +123,6 @@ h5 {
 .card-title {
   margin-bottom: .5rem;
   font-family: 'Cormorant Garamond', serif;
-  font-weight: 500;
-  line-height: 1.2;
-  font-size: 1.5rem;
   margin-bottom: 10px;
   color: rgb(165, 166, 167);
 }
@@ -157,4 +153,532 @@ h5 {
 
 h1{
   padding: 30px 0px 5px 0px;
+}
+
+/* Aqui se inicia a Responsividade CSS Home Page */
+
+
+@media (max-width: 1920px) {
+  .plusCard {
+    width: 200px;
+    height: 300px;
+ 
+ }
+ 
+ .card-img-top {
+     height: 150px;
+ }
+ 
+ .card-body {
+     height: 150px;
+ }
+
+ .card-title {
+  font-size: 16px;
+ }
+ 
+ .card-text {
+  font-size: 14px;
+ }
+
+}
+
+@media (max-width: 1550px) {
+
+  .plus {
+    width: 260px;
+  }
+
+  .plus img{
+    width: 30px;
+    margin: 8px;
+  }
+
+  .plus h5 {
+    font-size: 18px;
+  }
+
+  .plus p {
+    font-size: 16px;
+  }
+
+  .plusCard {
+    width: 190px;
+    height: 280px;
+ 
+ }
+ 
+ .card-img-top {
+     height: 140px;
+ }
+ 
+ .card-body {
+     height: 130px;
+     padding: 9px;
+ }
+
+ .card-title {
+  font-size: 15px;
+ }
+ 
+ .card-text {
+  font-size: 13px;
+ }
+
+}
+
+@media (max-width: 1440px) {
+
+  .plus {
+    width: 260px;
+  }
+
+  .plus img{
+    width: 25px;
+    margin: 8px;
+  }
+
+  .plus h5 {
+    font-size: 18px;
+  }
+
+  .plus p {
+    font-size: 16px;
+  }
+
+  .plusCard {
+    width: 180px;
+    height: 260px;
+ 
+ }
+ 
+ .card-img-top {
+     height: 130px;
+ }
+ 
+ .card-body {
+     height: 130px;
+     padding: 9px;
+ }
+
+ .card-title {
+  font-size: 15px;
+ }
+ 
+ .card-text {
+  font-size: 13px;
+ }
+}
+
+@media (max-width: 1388px) {
+
+  .plus {
+    width: 180px;
+  }
+
+  .plus img{
+    width: 22px;
+    margin: 8px;
+  }
+
+  .plus h5 {
+    font-size: 14px;
+  }
+
+  .plus p {
+    font-size: 13px;
+  }
+
+  .plusCard {
+    width: 164px;
+    height: 259px;
+ 
+ }
+ 
+ .card-img-top {
+     height: 129px;
+ }
+ 
+ .card-body {
+     height: 129px;
+     padding: 9px;
+ }
+
+ .card-title {
+  font-size: 14px;
+ }
+ 
+ .card-text {
+  font-size: 12px;
+ }
+}
+
+@media (max-width: 1080px) {
+
+  .plus {
+    width: 160px;
+  }
+
+  .plus img{
+    width: 20px;
+    margin: 8px;
+  }
+
+  .plus h5 {
+    font-size: 12px;
+  }
+
+  .plus p {
+    font-size: 11px;
+  }
+
+  .plusCard {
+    width: 150px;
+    height: 200px;
+ }
+ 
+ .card-img-top {
+     height: 100px;
+ }
+ 
+ .card-body {
+     height: 100px;
+     padding: 8px;
+ }
+
+ .card-title {
+  font-size: 11px;
+ }
+ 
+ .card-text {
+  font-size: 9px;
+ }
+
+
+}
+
+@media (max-width: 925px) {
+
+  .plus {
+    width: 160px;
+  }
+
+  .plus img{
+    width: 20px;
+    margin: 8px;
+  }
+
+  .plus h5 {
+    font-size: 10px;
+  }
+
+  .plus p {
+    font-size: 9px;
+  }
+
+  .plusCard {
+    width: 130px;
+    height: 180px;
+ }
+ 
+ .card-img-top {
+     height: 100px;
+ }
+ 
+ .card-body {
+     height: 100px;
+     padding: 2px;
+ }
+
+ .card-title {
+  font-size: 10px;
+ }
+ 
+ .card-text {
+  font-size: 8px;
+ }
+
+
+}
+
+@media (max-width: 771px) {
+
+  .side-center img {
+    width: 110px;
+  }
+
+  .gray-h {
+    font-size: 14px;
+  }
+
+  .gray {
+    font-size: 12px;
+  }
+
+  .plus {
+    width: 240px;
+  }
+
+  .plus img{
+    width: 15px;
+    margin: 8px;
+  }
+
+  .plus h5 {
+    font-size: 9px;
+  }
+
+  .plus p {
+    font-size: 10px;
+  }
+
+  .plusCard {
+    width: 100px;
+    height: 150px;
+ }
+ 
+ .card-img-top {
+     height: 70px;
+ }
+ 
+ .card-body {
+     height: 80px;
+     padding: 8px;
+ }
+
+ .card-title {
+  font-size: 8px;
+ }
+ 
+ .card-text {
+  font-size: 7px;
+ }
+
+
+}
+
+@media (max-width: 670px) {
+
+  .side-center img {
+    width: 110px;
+  }
+
+  .gray-h {
+    font-size: 14px;
+  }
+
+  .gray {
+    font-size: 12px;
+  }
+
+  .plus {
+    width: 240px;
+  }
+
+  .plus img{
+    width: 12px;
+    margin: 8px;
+  }
+
+  .plus h5 {
+    font-size: 8px;
+  }
+
+  .plus p {
+    font-size: 8px;
+  }
+
+  .plusCard {
+    width: 80px;
+    height: 130px
+ }
+ 
+ .card-img-top {
+     height: 60px;
+ }
+ 
+ .card-body {
+     height: 75px;
+     padding: 4px;
+ }
+
+ .card-title {
+  font-size: 6px;
+ }
+ 
+ .card-text {
+  font-size: 6px;
+ }
+
+ @media (max-width: 575px) {
+
+  .side-center img {
+    width: 110px;
+  }
+
+  .gray-h {
+    font-size: 14px;
+  }
+
+  .gray {
+    font-size: 11px;
+  }
+
+  #plus {
+    width: 100%;
+    height: 150px;
+    display: flex; 
+    flex-flow: row nowrap;
+    overflow-x: scroll;
+    gap: 5px;
+  }
+
+  .plus {
+    width: 105px;
+    flex-shrink: 0;
+  }
+
+  .plus img{
+    width: 16px;
+    margin: 8px;
+  }
+
+  .plus h5 {
+    font-size: 8px;
+  }
+
+  .plus p {
+    font-size: 9px;
+  }
+
+  .cards {
+    flex-flow: row nowrap;
+    width: 90%;
+    gap: 12px;
+    overflow-x: scroll;
+  }
+
+  .plusCard {
+    width: 110px;
+    height: 150px;
+    flex-shrink: 0;
+ }
+ 
+ .card-img-top {
+     height: 70px;
+ }
+ 
+ .card-body {
+     height: 80px;
+     padding: 2px;
+ }
+
+ .card-title {
+  font-size: 9px;
+ }
+ 
+ .card-text {
+  font-size: 8px;
+ }
+
+.Networking {
+  width: 55%;
+ } 
+
+ /* Works on Firefox */
+* {
+  scrollbar-width: thin;
+  scrollbar-color: rgba(17, 15, 15, 0.52) rgba(188, 230, 243, 0.006);
+}
+
+/* Works on Chrome, Edge, and Safari */
+*::-webkit-scrollbar {
+  width: 10px;
+}
+
+*::-webkit-scrollbar-track {
+  background: rgba(0, 0, 0, 0);
+}
+
+*::-webkit-scrollbar-thumb {
+  background-color: rgba(3, 6, 6, 0.006);
+  border-radius: 20px;
+  border: 3px solid rgba(188, 230, 243, 0.006);
+}
+
+}
+
+}
+
+@media (max-width: 450px) {
+
+  .side-center img {
+    width: 100px;
+  }
+
+  .gray-h {
+    font-size: 14px;
+  }
+
+  .gray {
+    font-size: 11px;
+  }
+
+  #plus {
+    width: 100%;
+    height: 150px;
+    display: flex; 
+    flex-flow: row nowrap;
+    overflow-x: scroll;
+    gap: 5px;
+  }
+
+  .plus {
+    width: 105px;
+    flex-shrink: 0;
+  }
+
+  .plus img{
+    width: 16px;
+    margin: 8px;
+  }
+
+  .plus h5 {
+    font-size: 8px;
+  }
+
+  .plus p {
+    font-size: 9px;
+  }
+
+  .cards {
+    flex-flow: row nowrap;
+    width: 90%;
+    gap: 12px;
+    overflow-x: scroll;
+  }
+
+  .plusCard {
+    width: 110px;
+    height: 150px;
+    flex-shrink: 0;
+ }
+ 
+ .card-img-top {
+     height: 70px;
+ }
+ 
+ .card-body {
+     height: 80px;
+     padding: 2px;
+ }
+
+ .card-title {
+  font-size: 9px;
+ }
+ 
+ .card-text {
+  font-size: 8px;
+ }
+
 }
