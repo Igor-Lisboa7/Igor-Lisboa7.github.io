@@ -12,7 +12,7 @@
 
 .about-me {
     text-align-last: left;
-    max-width: 50%;
+    width: 50%;
     margin: 20px auto;
     padding: 20px;
 }
@@ -33,7 +33,7 @@
     font-family: 'Cormorant Garamond', serif;
 }
 
-.about-me img {
+.sobreMim{
     width: 152px;
     height: 150px;
     box-shadow: 1px 2px 1px 1px rgba(2, 192, 235, 0.911);
@@ -67,4 +67,134 @@ p img:hover {
     content: "";
     clear: both;
     display: table;
+}
+
+/* Aqui se inicia a Responsividade CSS About Page */
+
+@media (max-width: 1920px) {
+
+    .about-me h1 {
+        font-size: 22px;
+    }
+
+    .sobreMim {
+        width: 135px;
+        height: 137px;
+    }
+}
+
+@media (max-width: 1550px) {
+
+    .about-me h1 {
+        font-size: 18px;
+    }
+
+    .gray {
+        font-size: 17px;
+    }
+
+    .sobreMim {
+        width: 125px;
+        height: 127px;
+    }
+}
+
+@media (max-width: 1440px) {
+
+    .about-me {
+        width: 60%;
+    }
+
+    .about-me h1 {
+        font-size: 18px;
+    }
+
+    .gray {
+        font-size: 15px;
+    }
+
+    .sobreMim {
+        width: 115px;
+        height: 117px;
+    }
+}
+
+@media (max-width: 1080px) {
+
+    .about-me {
+        width: 75%;
+    }
+
+    .about-me h1 {
+        font-size: 17px;
+    }
+
+    .gray {
+        font-size: 15px;
+    }
+
+    .sobreMim {
+        width: 112px;
+        height: 112px;
+    }
+}
+
+@media (max-width: 771px) {
+
+    .about-me {
+        width: 80%;
+    }
+
+    .about-me h1 {
+        font-size: 16px;
+    }
+
+    .gray {
+        font-size: 13px;
+    }
+
+    .sobreMim {
+        width: 108px;
+        height: 110px;
+    }
+}
+
+@media (max-width: 650px) {
+
+    .about-me {
+        width: 85%;
+    }
+
+    .about-me h1 {
+        font-size: 14px;
+    }
+
+    .gray {
+        font-size: 11px;
+    }
+
+    .sobreMim {
+        width: 106px;
+        height: 108px;
+    }
+}
+
+@media (max-width: 450px) {
+
+    .about-me {
+        width: 98%;
+    }
+
+    .about-me h1 {
+        font-size: 11px;
+    }
+
+    .gray {
+        font-size: 9px;
+    }
+
+    .sobreMim {
+        width: 98px;
+        height: 97px;
+    }
 }
